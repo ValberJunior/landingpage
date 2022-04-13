@@ -1,0 +1,27 @@
+@import "./functions";
+@import "./variables";
+
+/*
+  RESPONSIVE
+*/
+
+//Phone
+@mixin for-phone-only{
+    @media(max-width: 767.98px){
+        @content;
+    }
+}
+
+//Tablet
+@mixin for-tablet-only{
+    @media(min-width: 768px)and(max-width:1199.98px){
+        @content;
+    }
+}
+
+//Desktop
+@mixin for-desktop-only{
+    @media(min-width: 1200px){
+        @content;
+    }
+}

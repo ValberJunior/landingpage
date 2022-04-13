@@ -1,0 +1,53 @@
+//mixins
+
+@mixin resetAll{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    scrollbar-width: none; /*firefox*/
+}
+
+//reset list
+@mixin reset-list{
+    list-style: none;
+}
+
+//reset <a>
+@mixin reset-link{
+    text-decoration: none;
+}
+
+//full screen
+@mixin fullscreen{
+    width: 100vw;
+    height: 100vh;
+}
+
+//display flex
+@mixin displayflex($property, $jty-cnt){
+    display: flex;
+    #{$property}: #{$jty-cnt};
+}
+
+
+//fontSize
+
+@function calculateRem($size){
+    @return ($size/16px) * 1rem;
+}
+
+@mixin fontSize($size){
+    font-size: calculateRem($size);
+}
+
+
+
+//placeholder selector
+
+%invisible{
+    display: none
+};
+
+%visible{
+    display: flex
+};

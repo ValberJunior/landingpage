@@ -1,0 +1,19 @@
+@import "../../abstract/functions", "../../abstract/responsive", "../../abstract/variables";
+
+.button{
+    background-color: $color-button;
+    border-top: 1px solid $color-button2;
+    border-left: 2px solid $color-button2;
+    border-right: 2px solid $color-button2;
+    border-bottom: 5px solid $color-button2;
+    color: $color6;
+
+    padding: 25px 75px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    border-radius: 50px;
+
+    cursor: pointer;
+}
