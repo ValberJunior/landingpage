@@ -1,4 +1,4 @@
-import { Header, Waves} from "../../components"
+import { Header, Waves, About,Depositions} from "../../components";
 import "./styles.scss"
 
 const Home = () => {
@@ -6,6 +6,8 @@ const Home = () => {
     <>
     <Header/>
     <Waves/>
+    <About/>
+    <Depositions/>
 
     </>
   )

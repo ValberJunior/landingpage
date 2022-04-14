@@ -1,0 +1,47 @@
+@import "../../abstract/functions", "../../abstract/responsive", "../../abstract/variables";
+
+.about{
+    width: 100vw;
+    background-color: $color6;
+
+     &__content{
+         width: 60%;
+         margin: auto;
+
+         @include displayflex(justify-content, space-around);
+         align-items: center;
+
+         &-image{
+             width:45%;
+
+             &-icon{
+                 width:100%;
+                 padding: 10px 40px;
+             }
+         }
+
+         &-desc{
+             width: 55%;
+             padding: 10px 40px;
+    
+             &-subtitle{
+                 font-family: $font-special;
+                 color: $color5;
+                 font-weight: 400;
+                 @include fontSize(14px);
+             }
+             &-title{
+                 color: $color1;
+                 font-weight: 800;
+                 @include fontSize(30px);
+                 margin-top: 15px;
+             }
+             &-desc{
+                 color: $color-text;
+                 font-weight: 400;
+                 @include fontSize(16px);
+                 margin-top: 15px;
+             }
+         }
+     }
+}
