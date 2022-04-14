@@ -13,6 +13,46 @@
     }
 
     &__desc{
+        width: 80%;
+        margin: auto;
+
         position: absolute;
+        inset: 0;
+        
+        @include displayflex(justify-content, center);
+        flex-direction: column;
+
+
+            &-content{
+                text-align: center;
+
+                &-title{
+                    width: 100%;
+                    font-weight: 800;
+                    @include fontSize(30px);
+                    color: $color2;
+                    margin: 20px 0;
+
+                }
+                &-subtitle{
+                    width: 100%;
+                    font-weight: 400;
+                    @include fontSize(14px);
+                    font-family: $font-special;
+                    color: $color6;
+                    margin-bottom: 20px;
+                }
+
+            }
+            
+            &-images{
+                @include displayflex(justify-content, center);
+
+                &-image{
+                    width: 260px;
+                    height: 260px;
+                    margin: 5px;
+                }
+            }
     }
 }
