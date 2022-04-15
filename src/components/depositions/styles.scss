@@ -2,25 +2,25 @@
 
 .depositions{
     width: 100vw;
-    height: 50vh;
-    margin: 35px 0;
-    position: relative;
+    height: 60vh;
 
-    &__banner{
-        width: 100vw;
-        position: absolute;
-        top: -36%;
-    }
+    margin-top: 30px;
+
+    background-color: $color7;
+    border-top: 8px dashed white;
+    border-bottom: 8px dashed white;
+
+
+    @include displayflex(justify-content,center);
+    align-items: center;
 
     &__desc{
         width: 80%;
         margin: auto;
-
-        position: absolute;
-        inset: 0;
         
         @include displayflex(justify-content, center);
         flex-direction: column;
+        align-items: center;
 
 
             &-content{
@@ -37,9 +37,11 @@
                 &-subtitle{
                     width: 100%;
                     font-weight: 400;
-                    @include fontSize(14px);
+                    @include fontSize(16px);
                     font-family: $font-special;
                     color: $color6;
+                }
+                &-divider{
                     margin-bottom: 20px;
                 }
 

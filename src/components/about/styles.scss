@@ -2,7 +2,7 @@
 
 .about{
     width: 100vw;
-    background-color: $color6;
+    background: linear-gradient($color4, $color6);
 
      &__content{
          width: 60%;

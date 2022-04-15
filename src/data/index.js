@@ -21,3 +21,23 @@ export const TextDepositions =
     title: "Alunas Que Fizeram e Aprovam O Curso!",
     subtitle: "VOCÊ VAI SER A PRÓXIMA!"
 }
+
+export const TextDetails = 
+{
+    title:"Aprimore seus conhecimentos com o curso perfeito para você!",
+    cards:[
+        {   icon:"https://e291f1206726d700191b-d0cedd1cc05016668dc83bc2742129e5.ssl.cf1.rackcdn.com/windsong/media/icon-pink-paradise-5fc9a28e9e6d0.svg",
+            title:"Básico ao Avançado:",
+            desc:"Passo a passo simples e didático, não importa se você já possui ou não conhecimento na área." },
+        {
+            icon:"https://alana.ai/static/images/icons/learning.svg",
+            title:"Aulas Didáticas",
+            desc:"Aulas didáticas e de fácil entendimento, dessa forma qualquer pessoa consegue aprender e colocar em prática o conteúdo ensinado.",
+        },
+        {
+            icon:"https://cdn.iconscout.com/icon/free/png-64/analytics-416-267411.png",
+            title:"Mercado em Alta",
+            desc:"Você estará pronta para atuar no mercado que mais tem crescido no mundo e se destacar como uma profissional qualificada.",
+        }
+    ]
+}

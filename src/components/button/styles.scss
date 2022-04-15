@@ -5,7 +5,8 @@
     border-top: 1px solid $color-button2;
     border-left: 2px solid $color-button2;
     border-right: 2px solid $color-button2;
-    border-bottom: 5px solid $color-button2;
+    border-bottom: 5px outset $color-button2;
+
     color: $color6;
 
     padding: 25px 75px;

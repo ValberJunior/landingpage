@@ -1,15 +1,15 @@
-import { Header, Waves, About,Depositions} from "../../components";
+import { Header, About,Depositions, Details} from "../../components";
 import "./styles.scss"
 
 const Home = () => {
   return (
-    <>
+    <div className="wrapper">
     <Header/>
-    <Waves/>
     <About/>
     <Depositions/>
+    <Details/>
 
-    </>
+    </div>
   )
 }
 

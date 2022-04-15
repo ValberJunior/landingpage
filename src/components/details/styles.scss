@@ -1,0 +1,52 @@
+@import "../../abstract/functions", "../../abstract/responsive", "../../abstract/variables";
+
+.details{
+    margin-top: 80px;
+
+    &__content{
+        width: 60%;
+        background: green;
+        margin: auto;
+
+        &-title{
+            width: 50%;
+            margin: auto;
+            background: yellow;
+            @include fontSize(33px);
+            color: $color2;
+            font-weight: 800;
+        }
+
+        &-cards{
+
+            width: 100%;
+            @include displayflex(justify-content,center);
+
+            &-card{
+                width: 360px;
+                height: 280px;
+                background-color: $color3;
+                color: $color2;
+                border-radius: 20px;
+                @include displayflex(justify-content, center);
+                flex-direction: column;
+                align-items: center;
+    
+                    &-icon{
+                        width: 60px;
+                    }
+    
+                    &-title{
+                        @include fontSize(20px);
+                        font-weight: 700;
+                    }
+    
+                    &-dec{
+                        @include fontSize(16px);
+                        font-weight: 400;
+                    }
+            }
+        }
+    
+    }
+}

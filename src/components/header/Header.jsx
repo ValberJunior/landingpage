@@ -2,6 +2,7 @@ import "./styles.scss";
 import Logo from "../../assets/logoUnhas.png";
 import { Button } from "../../components";
 import { Text } from "../../data";
+import Waves from "../waves/Waves";
 
 const Header = () => {
 
@@ -26,15 +27,18 @@ const Header = () => {
 
                 </div>
 
-                <iframe className="header__video" width="536" 
-                height="302" src="https://www.youtube.com/embed/6ggxcAidO28"
-                 title="YouTube video player"  allow="accelerometer; 
-                 autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-                
+                <iframe className="header__video"
+                width="536" height="302" src="https://www.youtube.com/embed/6ggxcAidO28"
+                title="YouTube video player" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+                </iframe>
+        
 
             </div>
 
         </div>
+
+        <Waves/>
         
     </header>
   )

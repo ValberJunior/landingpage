@@ -1,9 +1,9 @@
-import WavesPNG from "../../assets/waves.png";
+import WavesSVG from "../../assets/wavesOpacityBranco.svg";
 import "./styles.scss";
 
 const Waves = () => {
   return (
-    <img src={WavesPNG} className="divider" alt="Divider PNG"/>
+    <img src={WavesSVG} className="divider" alt="Divider PNG"/>
   )
 }
 
