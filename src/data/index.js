@@ -41,3 +41,145 @@ export const TextDetails =
         }
     ]
 }
+
+//Subjects
+
+export const DataSubjects = [
+
+    {
+        title:"O Que Você Vai Aprender?",
+        subtitle: "VEJA UM POUCO DO QUE VOCÊ VAI APRENDER",
+        titlefooter: "E MUITO, MUITO MAIS!!",
+        cards:[
+            {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/1DUN-1.png",
+             legend:"Apresentação dos Materiais",
+             id:1},
+            
+             {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/2DUN.png",
+            legend:"Cabine Led - Funcionamento",
+             id:2},
+            
+            {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/3DUN-1.png",
+             legend:"Funcionamento da Lixadeira Elétrica",
+             id:3},
+            
+             {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/4DUNN-1.png",
+             legend:"Apresentação dos tipos de Brocas",
+             id:4},
+            
+             {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/5DUN.png",
+             legend:"Fibra de Vidro",
+             id:5},
+            
+             {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/13DUN.png",
+             legend:"Alongamento em Gel na Tips",
+             id:6},
+            
+             {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/11DUN.png",
+             legend:"Como Montar o Molde",
+             id:7},
+            
+             {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/12DUN.png",
+             legend:"Alongamento em Gel Moldado",
+             id:8},
+            
+             {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/14DUN.png",
+             legend:"Alongamento no molde F1 - Polygel",
+             id:9},
+            
+             {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/15DUN.png",
+             legend:"Manutenção do Alongamento",
+             id:10},
+            
+             {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/16DUN.png",
+             legend:"Remoção do Alongamento",
+             id:11},
+            
+             {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/28DUN-1.png",
+             legend:"Curvatura em C e Slim",
+             id:12},
+            
+             {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/7DUN.png",
+             legend:"Almond",
+             id:13},
+            
+             {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/8DUN.png",
+             legend:"Ballerine",
+             id:14},
+            
+             {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/6DUN.png",
+             legend:"Square",
+             id:15},
+            
+             {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/10DUN.png",
+             legend:"Formato Squoval",
+             id:16},
+            
+             {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/9DUN.png",
+             legend:"Stiletto",
+             id:17},
+            
+             {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/19DUN.png",
+             legend:"Banho de Gel (Cristalização)",
+             id:18},
+
+             {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/16DUN-1.png",
+             legend:"Esmaltação em Gel",
+             id:19},
+
+             {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/18DUN.png",
+             legend:"Blindagem das Unhas",
+             id:20},
+
+             {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/31DUN.png",
+             legend:"Francesinha Bilateral",
+             id:21},
+
+             {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/30DUN.png",
+             legend:"Francesinha Reta", 
+             id:22},
+
+             {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/29DUN.png",
+             legend:"Francesinha Reversa",
+             id:23},
+
+             {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/32DUN.png",
+             legend:"Efeito Cromad",
+             id:24},
+
+             {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/20DUN.png",
+             legend:"Babyboomer",
+             id:25},
+
+             {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/21DUN.png",
+             legend:"Babycolor",
+             id:26},
+
+             {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/22DUN.png",
+             legend:"Chuva de Glitter",
+             id:27},
+
+             {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/23DUN.png",
+             legend:"Encapsulada com Flor Seca",
+             id:28},
+
+             {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/24DUN.png",
+             legend:"Encapsulada com Adesivo",
+             id:29},
+
+             {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/25DUN.png",
+             legend:"Decoração Fixa com Foil",
+             id:30},
+
+             {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/26DUN.png",
+             legend:"Decoração Fixa Efeito Mármore",
+             id:31},
+
+             {icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/27DUN.png",
+             legend:"Técnica do Carimbo",
+             id:32},
+
+        ]
+    }
+    
+]

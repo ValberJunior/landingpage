@@ -5,3 +5,4 @@ export {default as About} from "./about/About";
 export {default as Divider} from "./divider/Divider";
 export { default as Depositions } from "./depositions/Depositions";
 export { default as Details} from "./details/Details";
+export { default as Subjects} from "./subjects/Subjects";
