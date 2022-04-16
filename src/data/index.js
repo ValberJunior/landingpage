@@ -286,3 +286,58 @@ export const DataCertificates = [
         altcertificates:"Certificados de Conclusão"
     }
 ]
+
+//LifeTime Access
+
+export const DataLifetimeAccess = [
+    {
+        img:"https://unhasprofissionais.com/wp-content/uploads/2021/10/Shape-acesso-1.png",
+        alt:"Mulher feliz mexendo em seu computador",
+        title:"Estude onde e quando quiser!",
+        subtitle:"ACESSO IMEDIATO E VITALÍCIO",
+        desc1:"Após realizar o seu pedido você irá receber um e-mail contendo todos os dados e informações para acessar a sua área restrita.",
+        desc2:"Ao fazer o seu login você já pode iniciar o curso e assistir as vídeo aulas completas e baixar os arquivos disponíveis agora mesmo. Você pode estudar quando e onde quiser pelo seu computador, tablet ou celular."
+    }
+] 
+
+
+//Guarantee
+
+export const DataGuarantee = [
+    {
+        title:"Garantia Incondicional!",
+        subtitle:"RISCO ZERO PARA VOCÊ!",
+        desc1:"Ainda não tem certeza? Não se preocupe.Se o conteúdo descrito acima não for o mesmo que você receber, você tem 7 dias de garantia e devolvemos seu dinheiro sem burocracia!",
+        desc2:"Lembrando que seu acesso a plataforma é vitalício e sempre estamos incluindo novas aulas.",
+        img:"https://unhasprofissionais.com/wp-content/uploads/2021/10/risco-zero-limpeza.png",
+        alt:"Selo de garantia de 7 dias"
+    }
+]
+
+//Promotion
+
+export const DataPromotion = [
+    {
+        title: "OFERTA ESPECIAL POR TEMPO LIMITADO!",
+        options:[
+                "Grupo Vip de Alunas","Curso Atualizado","Acesso Vitalício","2 Certificados"
+                ],
+        oldprice:`de <span>R$ 297,00</span> Por Apenas`,
+        price:"8x de R$ 11,14",
+        price2:"Ou apenas R$ 79,90 á vista",
+        button:"SIM, QUERO GARANTIR MINHA VAGA!",
+        url:"#",
+        logos:"https://unhasprofissionais.com/wp-content/uploads/2021/10/branquinhu.png",
+        alt:"Métodos de Pagamentos"
+    }
+]
+
+//Footer
+
+export const DataFooter = [
+    {
+        terms:"https://unhasprofissionais.com/termos/",
+        privacypolicies:"https://unhasprofissionais.com/privacidade/",
+        copyrights:"© 2021 Escola de Design de Unhas - Todos os Direitos Reservados."
+    }
+]

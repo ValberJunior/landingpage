@@ -85,3 +85,24 @@
     color: $color;
     font-weight: 800;
 }
+
+//subtitle
+
+@mixin subtitle($fontsize, $align, $color){
+    width:100%;
+    text-align: $align;
+    @include fontSize($fontsize);
+    color: $color;
+    font-weight: 400;
+}
+
+//text
+
+@mixin text($fontsize, $align, $color){
+    width:100%;
+    text-align: $align;
+    @include fontSize($fontsize);
+    color: $color;
+    font-weight: 400;
+}
+

@@ -7,7 +7,6 @@ import React from 'react'
 
 const FreeClass = () => {
 
-console.log(DataFreeClass);
 
  const TITLE = DataFreeClass[0].title;
  const SUBTITLE = DataFreeClass[0].subtitle;

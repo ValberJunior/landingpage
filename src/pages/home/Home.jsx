@@ -1,4 +1,4 @@
-import { Header, About,Depositions, Details, Subjects, Bonus, FreeClass, SocialProof, Certificates} from "../../components";
+import { Header, About,Depositions, Details, Subjects, Bonus, FreeClass, SocialProof, Certificates, LifeTimeAccess} from "../../components";
 import "./styles.scss"
 
 const Home = () => {
@@ -13,6 +13,7 @@ const Home = () => {
     <FreeClass/>
     <SocialProof/>
     <Certificates/>
+    <LifeTimeAccess/>
 
     </div>
   )

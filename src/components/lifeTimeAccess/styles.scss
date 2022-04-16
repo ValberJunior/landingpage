@@ -1,0 +1,47 @@
+@import "../../abstract/functions", "../../abstract/responsive", "../../abstract/variables";
+
+.lifeTimeAccess{
+
+    @include fullscreen(100vw,auto);
+    background: linear-gradient($color6, $color4, $color4);
+    @include displayflex(justify-content,center);
+    padding: 30px 0;
+
+        &__container{
+
+            @include wrapperCenter(75%,row);
+
+            .content{
+
+                @include displayflex(justify-content,space-between);
+              
+               
+                &__img{
+                    width: 400px;
+                }
+
+                &__desc{
+
+                    width: 55%;
+
+                    &-subtitle{
+                        @include subtitle(14px, start ,$color5);
+                    }
+
+                    &-title{
+                        @include title(30px,$color2);
+                        text-align: start;
+                        margin-top: 15px;
+                    }
+
+                    &-text{
+                        @include text(17px, start, $color2);
+                        margin-top: 15px;
+                    }
+
+                }
+            }
+
+        }
+
+}

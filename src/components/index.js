@@ -10,3 +10,4 @@ export {default as Bonus} from "./bonus/Bonus";
 export { default as FreeClass } from "./freeClass/FreeClass";
 export {default as SocialProof} from "./socialProof/SocialProof";
 export {default as Certificates} from "./certificates/Certificates";
+export{default as LifeTimeAccess} from "./lifeTimeAccess/LifeTimeAccess";
