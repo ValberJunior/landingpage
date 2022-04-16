@@ -273,3 +273,16 @@ export const DataSocialProof = [
 }
 
 ]
+
+//Certificates
+
+export const DataCertificates = [
+    {
+        title:"2 Certificados Válidos Incluso",
+        desc:"Você vai ter acesso a 2 lindos certificados disponíveis em sua área restrita após concluir o curso. Nosso curso é associado à ABED (Associação Brasileira de Educação a Distância). Certificado com carga horária, CNPJ e válido em todo território nacional em conformidade com o Decreto Presidencial N° 5.154.",
+        seal:"https://unhasprofissionais.com/wp-content/uploads/2022/04/ABED-1024x1003.png",
+        altseal:"Selo da ABED",
+        certificates:"https://unhasprofissionais.com/wp-content/uploads/2021/10/certificado-DU-1.png",
+        altcertificates:"Certificados de Conclusão"
+    }
+]

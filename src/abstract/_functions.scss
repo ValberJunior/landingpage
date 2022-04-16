@@ -18,9 +18,9 @@
 }
 
 //full screen
-@mixin fullscreen{
-    width: 100vw;
-    height: 100vh;
+@mixin fullscreen($width,$height){
+    width: $width;
+    height: $height;
 }
 
 //display flex
@@ -51,3 +51,37 @@
 %visible{
     display: flex
 };
+
+//Divider Pages with Dashed Borders
+
+@mixin dashedBorder($size, $color){
+    border-top: $size dashed $color;
+    border-bottom: $size dashed $color;
+}
+
+//Background Image - Cover
+
+@mixin backgroundImage($url){
+    background-image: url($url);
+    background-size: cover;
+}
+
+//wrapper
+
+@mixin wrapperCenter($size, $direction){
+    width: $size;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+//title
+
+@mixin title($fontsize,$color){
+    width: 100%;
+    text-align: center;
+    @include fontSize($fontsize);
+    color: $color;
+    font-weight: 800;
+}
