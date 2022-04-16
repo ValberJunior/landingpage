@@ -1,0 +1,58 @@
+@import "../../abstract/functions", "../../abstract/responsive", "../../abstract/variables";
+
+
+.socialProof{
+    width: 100vw;
+    height: 80vh;
+
+    margin-top: 30px;
+    
+    padding: 20px 0px;
+
+    @include displayflex(justify-content,center);
+    align-items: center;
+
+        &__content{
+            width: 90%;
+
+            @include displayflex(justify-content,center);
+            flex-direction: column;
+            align-items: center;
+
+                    &-title{
+                        width: 100%;
+                        text-align: center;
+                        @include fontSize(33px);
+                        color: $color2;
+                        font-weight: 800;
+                        margin-bottom: 20px;
+                    }
+            
+                    &-subtitle{
+                        width: 100%;
+                        text-align: center;
+                        @include fontSize(16px);
+                        color: $color5;
+                        font-weight: 400;
+                        margin-bottom: 20px;
+                    }
+            
+                    &-cards{
+                        display: grid;
+                        grid-template: repeat(2,auto)/repeat(3,1Fr);
+
+
+                        .card{
+                            width: 370px;
+                            height: 240px;
+                            margin: 10px;
+
+                            &__img{
+                                width: 100%;
+                            }
+                        }
+                    }
+        }
+
+        
+}

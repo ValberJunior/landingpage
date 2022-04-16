@@ -8,3 +8,4 @@ export { default as Details} from "./details/Details";
 export { default as Subjects} from "./subjects/Subjects";
 export {default as Bonus} from "./bonus/Bonus";
 export { default as FreeClass } from "./freeClass/FreeClass";
+export {default as SocialProof} from "./socialProof/SocialProof";

@@ -221,6 +221,7 @@ export const DataBonus = [
 
 ];
 
+//Free class
 
 export const DataFreeClass = [
     {
@@ -228,4 +229,47 @@ export const DataFreeClass = [
         subtitle: "Confira uma aula gratuita do nosso curso!",
         button: "SIM, QUERO COMEÇAR AGORA!"
     }
+]
+
+//
+
+export const DataSocialProof = [
+{
+    title:"Veja os Depoimentos Sobre o Curso!",
+    subtitle:"AINDA ESTÁ EM DÚVIDA? CONFIRA OS DEPOIMENTOS DE NOSSAS ALUNAS!",
+    cards:
+            [
+                {   
+                    id:"1",
+                    image:"https://unhasprofissionais.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-08-03-at-14.41.13-1.jpeg",
+                    alt:"Depoimentos do WhatsApp"
+                },
+                {   
+                    id:"2",
+                    image:"https://unhasprofissionais.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-08-03-at-14.41.13-2.jpeg",
+                    alt:"Depoimentos do WhatsApp"
+                },
+                {
+                    id:"3",
+                    image: "https://unhasprofissionais.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-08-03-at-14.41.12-3-1.jpeg",
+                    alt:"Depoimentos do WhatsApp"
+                },
+                {
+                    id:"4",
+                    image:"https://unhasprofissionais.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-08-03-at-14.41.12-2-1.jpeg",
+                    alt:"Depoimentos do WhatsApp"
+                },
+                {
+                    id:"5",
+                    image:"https://unhasprofissionais.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-08-03-at-14.41.12-1-1.jpeg",
+                    alt:"Depoimentos do WhatsApp"
+                },
+                {
+                    id:"6",
+                    image:"https://unhasprofissionais.com/wp-content/uploads/2021/10/WhatsApp-Image-2021-08-03-at-14.41.12-4.jpeg",
+                    alt:"Depoimentos do WhatsApp"
+                }
+            ]
+}
+
 ]
