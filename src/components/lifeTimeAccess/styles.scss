@@ -29,8 +29,7 @@
                     }
 
                     &-title{
-                        @include title(30px,$color2);
-                        text-align: start;
+                        @include title(30px,start,$color2);
                         margin-top: 15px;
                     }
 

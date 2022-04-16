@@ -78,9 +78,9 @@
 
 //title
 
-@mixin title($fontsize,$color){
+@mixin title($fontsize, $align, $color){
     width: 100%;
-    text-align: center;
+    text-align: $align;
     @include fontSize($fontsize);
     color: $color;
     font-weight: 800;

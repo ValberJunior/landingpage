@@ -11,3 +11,5 @@ export { default as FreeClass } from "./freeClass/FreeClass";
 export {default as SocialProof} from "./socialProof/SocialProof";
 export {default as Certificates} from "./certificates/Certificates";
 export{default as LifeTimeAccess} from "./lifeTimeAccess/LifeTimeAccess";
+export{default as Garantee} from "./guarantee/Guarantee";
+export{default as SmallWave} from "./smallWave/SmallWave";

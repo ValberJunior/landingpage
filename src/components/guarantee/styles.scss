@@ -1,0 +1,47 @@
+@import "../../abstract/functions", "../../abstract/responsive", "../../abstract/variables";
+
+.guarantee{
+
+    @include fullscreen(100vw,auto);
+    background-color: $color6;
+    @include displayflex(justify-content,center);
+
+    padding: 80px 0;
+
+        &__container{
+
+            @include wrapperCenter(80%,row);
+
+            .content{
+
+                @include displayflex(justify-content,space-between);
+              
+               
+                &__img{
+                    width: 470px;
+                }
+
+                &__desc{
+
+                    width: 55%;
+
+                    &-subtitle{
+                        @include subtitle(14px, start ,$color5);
+                    }
+
+                    &-title{
+                        @include title(30px,start,$color2);
+                        margin-top: 15px;
+                    }
+
+                    &-text{
+                        @include text(17px, start, $color2);
+                        margin-top: 15px;
+                    }
+
+                }
+            }
+
+        }
+
+}

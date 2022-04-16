@@ -16,7 +16,7 @@
             @include wrapperCenter(50%,column);
 
             &-title{
-                @include title(35px,$color1);
+                @include title(35px,center,$color1);
                 margin-bottom: 20px;
             }
 
