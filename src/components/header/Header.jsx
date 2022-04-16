@@ -2,7 +2,9 @@ import "./styles.scss";
 import Logo from "../../assets/logoUnhas.png";
 import { Button } from "../../components";
 import { Text } from "../../data";
-import Waves from "../waves/Waves";
+import WavesDividerBottom from "../wavesDivider/WavesDividerBottom";
+
+const COLOR = "#FFFFFF";
 
 const Header = () => {
 
@@ -38,7 +40,7 @@ const Header = () => {
 
         </div>
 
-        <Waves/>
+        <WavesDividerBottom width="100vw" height="120" color={COLOR} />
         
     </header>
   )

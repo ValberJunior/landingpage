@@ -1,6 +1,5 @@
 export { default as Header } from "./header/Header";
 export { default as Button } from "./button/Button"; 
-export { default as Waves} from "./waves/Waves";
 export {default as About} from "./about/About";
 export {default as Divider} from "./divider/Divider";
 export { default as Depositions } from "./depositions/Depositions";
@@ -13,3 +12,6 @@ export {default as Certificates} from "./certificates/Certificates";
 export{default as LifeTimeAccess} from "./lifeTimeAccess/LifeTimeAccess";
 export{default as Garantee} from "./guarantee/Guarantee";
 export{default as SmallWave} from "./smallWave/SmallWave";
+export{default as Promotion} from "./promotion/Promotion";
+export{default as WavesDividerTop} from "./wavesDivider/WavesDividerTop";
+export{default as WavesDividerBottom} from "./wavesDivider/WavesDividerBottom";

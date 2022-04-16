@@ -1,0 +1,68 @@
+@import "../../abstract/functions", "../../abstract/responsive", "../../abstract/variables";
+
+.promotion{
+
+    @include fullscreen(100vw, auto);
+    @include backgroundImage("../../assets/banner4.png");
+    
+      &__container{
+               @include fullscreen(100vw,auto);
+               @include displayflex(justify-content, center);
+
+               padding: 15px 0px;
+
+               &-content{
+                   @include wrapperCenter(40%,column);
+                   
+                   .content{
+                       &__title{
+                           @include title(49px, center, $color6);
+                           margin-bottom: 20px;
+                       }
+
+                       &__list{
+                           @include reset-list();
+                           text-align: end;
+                           margin-bottom: 20px;
+
+                           .list{
+                               &__item{
+                                   @include fontSize(25px);
+                                   font-weight: 500;
+                                   color: $color6;
+
+                                   &-indicator{
+                                       color: $color8;
+                                   }
+                               }
+                           }
+                       }
+
+                       &__oldprice{
+                            @include fontSize(25px);
+                            font-weight: 500;
+                            color: $color6;
+                            margin-bottom: 20px;
+                       }
+
+                       &__price{
+                        @include title(55px, center, $color8);
+                        margin-bottom: 20px;
+                       }
+
+                       &__price2{
+                        @include fontSize(25px);
+                        font-weight: 500;
+                        color: $color6;
+                        margin-bottom: 20px;
+                       }
+
+                       &__img{
+                           width: 430px;
+                           margin: 30px 0px;
+                       }
+                   }
+               }    
+
+      }
+}

@@ -1,9 +1,10 @@
 import { DataSubjects } from "../../data";
-import Waves from "../waves/Waves";
+import WavesDividerBottom from "../wavesDivider/WavesDividerBottom";
 import "./styles.scss";
 
 const DATA = DataSubjects[0];
 const CARDS = DATA.cards;
+const COLOR = "#FFFFFF";
 
 const Subjects = () => {
 
@@ -36,7 +37,7 @@ const Subjects = () => {
                 <h4 className="subjects__content-titlefooter">{DATA.titlefooter}</h4>
 
         </article>
-        <Waves/>
+        <WavesDividerBottom width="100vw" height="150" color={COLOR} />
     </section>
   )
 }

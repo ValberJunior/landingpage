@@ -320,9 +320,16 @@ export const DataPromotion = [
     {
         title: "OFERTA ESPECIAL POR TEMPO LIMITADO!",
         options:[
-                "Grupo Vip de Alunas","Curso Atualizado","Acesso Vitalício","2 Certificados"
+                {option:"Grupo Vip de Alunas",
+                 id:"1"},
+                 {option:"Curso Atualizado",
+                  id:"2"},
+                 {option:"Acesso Vitalício",
+                  id:"3"},
+                 {option:"2 Certificados",
+                  id:"4"}
                 ],
-        oldprice:`de <span>R$ 297,00</span> Por Apenas`,
+        oldprice:`de R$ 297,00 Por Apenas`,
         price:"8x de R$ 11,14",
         price2:"Ou apenas R$ 79,90 á vista",
         button:"SIM, QUERO GARANTIR MINHA VAGA!",
