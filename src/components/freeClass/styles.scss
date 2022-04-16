@@ -1,0 +1,59 @@
+@import "../../abstract/functions", "../../abstract/responsive", "../../abstract/variables";
+
+
+.freeClass{
+    width: 100vw;
+    height: 90vh;
+
+    margin-top: 30px;
+    
+    padding: 50px 0px;
+
+    background-color: $color7;
+    border-top: 8px dashed white;
+    border-bottom: 8px dashed white;
+
+    @include displayflex(justify-content,center);
+    align-items: center;
+
+
+        &__content{
+            width: 80%;
+
+            @include displayflex(justify-content,center);
+            flex-direction: column;
+            align-items: center;
+
+            &-title{
+                width: 100%;
+                text-align: center;
+                @include fontSize(33px);
+                color: $color2;
+                font-weight: 800;
+                margin-top: 20px;
+            }
+
+            &-subtitle{
+                width: 100%;
+                text-align: center;
+                @include fontSize(16px);
+                color: $color6;
+                font-weight: 400;
+                margin-top: 20px;
+            }
+
+            &-divider{
+                display: inline;
+                margin-bottom: 20px;
+
+            }
+
+            &-video{
+                    border: 2px solid $color6;
+                    border-radius: 10px;
+
+                    margin-bottom: 30px;
+            }
+        }
+
+}

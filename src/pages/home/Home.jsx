@@ -1,4 +1,4 @@
-import { Header, About,Depositions, Details, Subjects} from "../../components";
+import { Header, About,Depositions, Details, Subjects, Bonus, FreeClass} from "../../components";
 import "./styles.scss"
 
 const Home = () => {
@@ -9,6 +9,8 @@ const Home = () => {
     <Depositions/>
     <Details/>
     <Subjects/>
+    <Bonus/>
+    <FreeClass/>
 
     </div>
   )

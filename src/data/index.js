@@ -183,3 +183,49 @@ export const DataSubjects = [
     }
     
 ]
+
+//Bonus
+
+export const DataBonus = [
+
+    {
+        title:"Adquira Hoje e Receba 03 Bônus Especiais!",
+        cards:[
+            {   
+                id:1,
+                icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/2bonus.png",
+                title:"Bônus 1",
+                subtitle:"Ficha de Anamnese",
+                desc:"Receba um modelo de ficha de Anamnese para atender suas clientes."
+
+            },
+            {
+                id:2,
+                icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/1bonus.png",
+                title:"Bônus 2",
+                subtitle:"Lista de Fornecedores",
+                desc:"Uma lista exclusiva com os melhores fornecedores."
+
+            },
+            {
+                id: 3,
+                icon:"https://unhasprofissionais.com/wp-content/uploads/2021/10/3bonus.png",
+                title:"Bônus 3",
+                subtitle:"Alongamento em Acrigel",
+                desc:"Ebook completo que ensina a técnica de Alongamento em Acrigel."
+
+            },
+            
+        ]
+    }
+
+];
+
+
+export const DataFreeClass = [
+    {
+        title: "Assista a Uma Aula Grátis!",
+        subtitle: "Confira uma aula gratuita do nosso curso!",
+        button: "SIM, QUERO COMEÇAR AGORA!"
+    }
+]

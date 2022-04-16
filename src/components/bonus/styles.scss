@@ -1,0 +1,62 @@
+@import "../../abstract/functions", "../../abstract/responsive", "../../abstract/variables";
+
+.bonus{
+
+    @include displayflex(justify-content,center);
+    align-items: center;
+    flex-direction: column;
+
+    padding: 40px 0px;
+
+    &__content{
+        width: 70%;
+
+        &-title{
+            width: 100%;
+            text-align: center;
+            @include fontSize(30px);
+            font-weight: 800;
+            color: $color2;
+        }
+
+        &-cards{
+            @include displayflex(justify-content,center);
+            align-items: center;
+            
+            .card{
+                width: 363px;
+                height: 434px;
+                @include displayflex(justify-content,center);
+                align-items: center;
+                flex-direction: column;
+
+                &__img{
+                    width:220px;
+                }
+
+                &__title{
+                    @include fontSize(23px);
+                    color: $color1;
+                    font-weight: 400;
+                    margin-top: 15px;
+                }
+
+                &__subtitle{
+                    @include fontSize(20px);
+                    color: $color2;
+                    font-weight: 700;
+                    margin-top: 15px;
+                }
+
+                &__desc{
+                    @include fontSize(16px);
+                    font-weight: 400;
+                    color: $color-text;
+
+                    margin-top: 15px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
