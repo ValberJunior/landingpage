@@ -15,3 +15,4 @@ export{default as SmallWave} from "./smallWave/SmallWave";
 export{default as Promotion} from "./promotion/Promotion";
 export{default as WavesDividerTop} from "./wavesDivider/WavesDividerTop";
 export{default as WavesDividerBottom} from "./wavesDivider/WavesDividerBottom";
+export{default as Footer} from "./footer/Footer";

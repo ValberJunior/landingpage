@@ -13,8 +13,9 @@
 }
 
 //reset <a>
-@mixin reset-link{
+@mixin reset-link($color){
     text-decoration: none;
+    color: $color;
 }
 
 //full screen

@@ -1,0 +1,41 @@
+@import "../../abstract/functions", "../../abstract/responsive", "../../abstract/variables";
+
+
+.footer{
+
+    @include fullscreen(100vw, auto);
+    background-color: $color-footer;
+    color: $color6;
+
+    @include displayflex(justify-content, center);
+
+    padding: 30px 0px;
+
+    &__container{
+        @include wrapperCenter(40%,column);
+        @include fontSize(14px);
+        font-weight: 400;
+
+        .content{
+
+            &__links{
+                
+                width: 50%;
+                text-align: center;
+
+                @include displayflex(justify-content,space-evenly);
+
+                margin-bottom: 10px;
+
+                &-link{
+                    @include reset-link($color6);
+                }
+    
+            }
+
+        }
+
+
+    }
+
+}
