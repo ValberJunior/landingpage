@@ -41,14 +41,12 @@
                     font-family: $font-special;
                     color: $color6;
                 }
-                &-divider{
-                    margin-bottom: 20px;
-                }
 
             }
             
             &-images{
                 @include displayflex(justify-content, center);
+                margin-top: 15px;
 
                 &-image{
                     width: 260px;

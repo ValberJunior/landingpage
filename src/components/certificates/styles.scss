@@ -28,22 +28,19 @@
                 @include fontSize(16px);
                 font-weight: 400;
 
-                margin-bottom: 20px;
+                margin-bottom: 15px;
 
             }
 
             &-seal{
                 width: 170px;
                 height: 170px;
-                margin-bottom: 20px;
-            }
-
-            &-divider{
-                margin-bottom: 20px;
+                margin-bottom: 15px;
             }
 
             &-images{
                 width: 550px;
+                margin-top: 15px;
             }
         }
 }

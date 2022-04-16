@@ -1,6 +1,9 @@
 import "./styles.scss";
-import SmallWave from "../../assets/smallwave.png";
+import SmallWave from "../smallWave/SmallWave";
 import { DataCertificates } from "../../data";
+
+
+const COLOR = "#420e1f";
 
 const Certificates = () => {
  
@@ -17,7 +20,7 @@ const Certificates = () => {
                 <h2 className="certificates__content-title">{TITLE}</h2>
                 <p className="certificates__content-desc">{DESC}</p>
                 <img src={SEAL} alt={ALTSEAL} className="certificates__content-seal"/>
-                <img src={SmallWave} alt="detalhes" className="certificates__content-divider"/>
+                <SmallWave width="82px" color={COLOR}/>
                 <img src={CERTF} alt={ALTCERTF} className="certificates__content-images"/>
         </article>
     </section>
