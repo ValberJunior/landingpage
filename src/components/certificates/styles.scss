@@ -15,21 +15,49 @@
 
                 .content{
                     @include wrapperCenter(50%,column);
+
+                    //for tablet
+                    @include for-tablet-only{
+                        @include wrapperCenter(95%,column);
+                    }
+
+                    //for phone
+                    @include for-phone-only{
+                        @include wrapperCenter(90%,column);
+                    }
         
                     &__title{
                         @include title(35px,center,$color1);
                         margin-bottom: 20px;
+
+                        //for phone
+                        @include for-phone-only{
+                            @include title(27px,center,$color2);
+
+                            &::first-line{
+                                color: $color1;
+                            }
+                        }
                     }
         
                     &__desc{
         
                         width:70%;
-                        text-align: center;
-                        color: $color2;
-                        @include fontSize(16px);
-                        font-weight: 400;
+                        @include text(16px, center, $color2);
         
                         margin-bottom: 15px;
+
+                        //for tablet
+                        @include for-tablet-only{
+                            width:90%;
+                            margin: 19px 0px;
+                        }
+
+                        //for phone
+                        @include for-phone-only{
+                            width:90%;
+                            margin: 19px 0px;
+                        }
         
                     }
         
@@ -37,11 +65,23 @@
                         width: 170px;
                         height: 170px;
                         margin-bottom: 15px;
+
+                         //for phone
+                        @include for-phone-only{
+                            width: 80px;
+                            height: 80px;
+                        }
                     }
         
                     &__images{
                         width: 550px;
                         margin-top: 15px;
+
+                        //for phone
+                        @include for-phone-only{
+                            width: 303px;
+                            height: 241px;
+                        }
                     }
                 }
         }

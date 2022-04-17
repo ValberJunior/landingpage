@@ -4,7 +4,7 @@ import { DataPromotion } from "../../data";
 import "./styles.scss";
 
 const COLOR = "#FFFFFF";
-const DATA = DataPromotion[0];
+const DATA = DataPromotion;
 
 const Promotion = () => {
   return (

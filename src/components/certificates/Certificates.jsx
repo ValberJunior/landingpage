@@ -9,12 +9,8 @@ const COLOR = "#420e1f";
 
 const Certificates = () => {
  
-    const TITLE = DataCertificates[0].title;
-    const DESC = DataCertificates[0].desc;
-    const SEAL = DataCertificates[0].seal;
-    const ALTSEAL = DataCertificates[0].altseal;
-    const CERTF = DataCertificates[0].certificates;
-    const ALTCERTF = DataCertificates[0].altcertificates;
+    const DATA = DataCertificates;
+
 
   return (
       <section className="certificates">
@@ -22,11 +18,11 @@ const Certificates = () => {
 
            <article className="certificates__container">
                 <div className="certificates__container content">
-                        <h2 className="content__title">{TITLE}</h2>
-                        <p className="content__desc">{DESC}</p>
-                        <img src={SEAL} alt={ALTSEAL} className="content__seal"/>
+                        <h2 className="content__title">{DATA.title}</h2>
+                        <p className="content__desc">{DATA.desc}</p>
+                        <img src={DATA.seal} alt={DATA.altseal} className="content__seal"/>
                         <SmallWave width="82px" color={COLOR}/>
-                        <img src={CERTF} alt={ALTCERTF} className="content__images"/>
+                        <img src={DATA.certificates} alt={DATA.altcertificates} className="content__images"/>
                 </div>
           </article>
 

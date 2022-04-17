@@ -4,12 +4,12 @@ import { DataLifetimeAccess } from "../../data";
 
 const LifeTimeAccess = () => {
 
-const TITLE = DataLifetimeAccess[0].title;
-const ALT = DataLifetimeAccess[0].alt;
-const IMG = DataLifetimeAccess[0].img;
-const SUBTITLE = DataLifetimeAccess[0].subtitle;
-const DESC1 = DataLifetimeAccess[0].desc1;
-const DESC2 = DataLifetimeAccess[0].desc2;
+const TITLE = DataLifetimeAccess.title;
+const ALT = DataLifetimeAccess.alt;
+const IMG = DataLifetimeAccess.img;
+const SUBTITLE = DataLifetimeAccess.subtitle;
+const DESC1 = DataLifetimeAccess.desc1;
+const DESC2 = DataLifetimeAccess.desc2;
 
 
   return (

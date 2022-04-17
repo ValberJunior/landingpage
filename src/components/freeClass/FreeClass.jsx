@@ -10,9 +10,9 @@ const COLOR = "#420e1f";
 const FreeClass = () => {
 
 
- const TITLE = DataFreeClass[0].title;
- const SUBTITLE = DataFreeClass[0].subtitle;
- const TEXTBUTTON = DataFreeClass[0].button;
+ const TITLE = DataFreeClass.title;
+ const SUBTITLE = DataFreeClass.subtitle;
+ const TEXTBUTTON = DataFreeClass.button;
     
   return (
     <section className="freeClass">

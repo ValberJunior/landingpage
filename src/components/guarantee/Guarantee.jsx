@@ -5,12 +5,12 @@ import SmallWave from "../smallWave/SmallWave";
 
 const Guarantee = () => {
 
-  const TITLE = DataGuarantee[0].title;
-  const SUBTITLE =  DataGuarantee[0].subtitle;
-  const DESC1 = DataGuarantee[0].desc1;
-  const DESC2 = DataGuarantee[0].desc2;
-  const IMG = DataGuarantee[0].img;
-  const ALT = DataGuarantee[0].alt;
+  const TITLE = DataGuarantee.title;
+  const SUBTITLE =  DataGuarantee.subtitle;
+  const DESC1 = DataGuarantee.desc1;
+  const DESC2 = DataGuarantee.desc2;
+  const IMG = DataGuarantee.img;
+  const ALT = DataGuarantee.alt;
   const COLOR1 = "#E78AA4";
      
 

@@ -258,17 +258,16 @@ export const DataBonus =
 
 //Free class
 
-export const DataFreeClass = [
+export const DataFreeClass = 
     {
         title: "Assista a Uma Aula Grátis!",
         subtitle: "Confira uma aula gratuita do nosso curso!",
         button: "SIM, QUERO COMEÇAR AGORA!"
     }
-]
 
 //
 
-export const DataSocialProof = [
+export const DataSocialProof = 
 {
     title:"Veja os Depoimentos Sobre o Curso!",
     subtitle:"AINDA ESTÁ EM DÚVIDA? CONFIRA OS DEPOIMENTOS DE NOSSAS ALUNAS!",
@@ -307,11 +306,9 @@ export const DataSocialProof = [
             ]
 }
 
-]
-
 //Certificates
 
-export const DataCertificates = [
+export const DataCertificates =
     {
         title:"2 Certificados Válidos Incluso",
         desc:"Você vai ter acesso a 2 lindos certificados disponíveis em sua área restrita após concluir o curso. Nosso curso é associado à ABED (Associação Brasileira de Educação a Distância). Certificado com carga horária, CNPJ e válido em todo território nacional em conformidade com o Decreto Presidencial N° 5.154.",
@@ -320,11 +317,10 @@ export const DataCertificates = [
         certificates:"https://unhasprofissionais.com/wp-content/uploads/2021/10/certificado-DU-1.png",
         altcertificates:"Certificados de Conclusão"
     }
-]
 
 //LifeTime Access
 
-export const DataLifetimeAccess = [
+export const DataLifetimeAccess = 
     {
         img:"https://unhasprofissionais.com/wp-content/uploads/2021/10/Shape-acesso-1.png",
         alt:"Mulher feliz mexendo em seu computador",
@@ -333,12 +329,12 @@ export const DataLifetimeAccess = [
         desc1:"Após realizar o seu pedido você irá receber um e-mail contendo todos os dados e informações para acessar a sua área restrita.",
         desc2:"Ao fazer o seu login você já pode iniciar o curso e assistir as vídeo aulas completas e baixar os arquivos disponíveis agora mesmo. Você pode estudar quando e onde quiser pelo seu computador, tablet ou celular."
     }
-] 
+
 
 
 //Guarantee
 
-export const DataGuarantee = [
+export const DataGuarantee = 
     {
         title:"Garantia Incondicional!",
         subtitle:"RISCO ZERO PARA VOCÊ!",
@@ -347,11 +343,11 @@ export const DataGuarantee = [
         img:"https://unhasprofissionais.com/wp-content/uploads/2021/10/risco-zero-limpeza.png",
         alt:"Selo de garantia de 7 dias"
     }
-]
+
 
 //Promotion
 
-export const DataPromotion = [
+export const DataPromotion = 
     {
         title: "OFERTA ESPECIAL POR TEMPO LIMITADO!",
         options:[
@@ -372,14 +368,12 @@ export const DataPromotion = [
         logos:"https://unhasprofissionais.com/wp-content/uploads/2021/10/branquinhu.png",
         alt:"Métodos de Pagamentos"
     }
-]
+
 
 //Footer
 
-export const DataFooter = [
+export const DataFooter = 
     {
-        terms:"https://unhasprofissionais.com/termos/",
-        privacypolicies:"https://unhasprofissionais.com/privacidade/",
-        copyrights:"© 2021 Escola de Design de Unhas - Todos os Direitos Reservados."
+        url1:"https://unhasprofissionais.com/termos/",
+        url2:"https://unhasprofissionais.com/privacidade/",
     }
-]

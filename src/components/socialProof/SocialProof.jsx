@@ -5,9 +5,9 @@ import React from 'react'
 
 const SocialProof = () => {
 
- const TITLE = DataSocialProof[0].title;   
- const SUBTITLE = DataSocialProof[0].subtitle;
- const CARDS =  DataSocialProof[0].cards;
+ const TITLE = DataSocialProof.title;   
+ const SUBTITLE = DataSocialProof.subtitle;
+ const CARDS =  DataSocialProof.cards;
 
   return (
     <section className="socialProof">
