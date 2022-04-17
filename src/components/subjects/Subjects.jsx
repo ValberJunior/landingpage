@@ -37,7 +37,7 @@ const Subjects = () => {
                 <h4 className="subjects__content-titlefooter">{DATA.titlefooter}</h4>
 
         </article>
-        <WavesDividerBottom width="100vw" height="150" color={COLOR} />
+        <WavesDividerBottom width="100vw" height="160" color={COLOR} />
     </section>
   )
 }

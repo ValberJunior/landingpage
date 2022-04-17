@@ -1,63 +1,110 @@
 @import "../../abstract/functions", "../../abstract/responsive", "../../abstract/variables";
 
 .subjects{
-    width: 100vw;
-    height: auto;
-    background-image: url("../../assets/banner2.png");
-    background-size: cover;
+
+    @include fullscreen(100vw, auto);
+    @include backgroundImage("../../assets/banner2.png");
     background-attachment: fixed;
 
-    padding: 90px 0px 0px 0px;
+    position: relative;
 
-    // border-bottom: 30px solid white;
-
+    //for tablet
     @include displayflex(justify-content,space-between);
     align-items: center;
     flex-direction: column;
 
+
     &__content{
         width: 70%;
 
+        padding: 50px 0px;
+
+        //for tablet
+        @include for-tablet-only{
+        width: 90%; 
+        }
+        //for phone
+        @include for-phone-only{
+            width: 90%; 
+
+        }
+
 
         &-title{
-            color: $color1;
-            width:100%;
-            text-align: center;
-            @include fontSize(38px);
-            font-weight: 800;
+            @include title(38px, center, $color1);
             margin: 30px 0px;
+
+            //for tablet
+            @include for-tablet-only{
+                @include title(26px, center, $color1);
+                margin: 10px 0px;
+            }
+
+            //for phone
+            @include for-phone-only{
+               @include title(26px, center, $color1);
+               margin:0 0 10px 0;
+            }            
+
+            
         }
     
         &-subtitle{
-            color: $color6;
-            width:100%;
-            text-align: center;
-            @include fontSize(16px);
-            font-weight: 400;
+            @include subtitle(16px, center, $color6);  
+           margin-bottom: 30px;
 
-            margin-bottom: 20px;
+            //for tablet
+            @include for-tablet-only{
+                @include subtitle(13px, center, $color6);
+                margin-bottom: 25px;
+            }
+
+            //for phone
+            @include for-phone-only{
+                @include subtitle(17px, center, $color6);
+                margin: 20px 0;
+            }
         }
     
         &-titlefooter{
-            color: $color1;
-            width:100%;
-            text-align: center;
-            @include fontSize(38px);
-            font-weight: 800;
+            @include title(38px, center, $color1);
             margin-top: 20px;
+            margin-bottom: 70px;
+
+            //for tablet
+            @include for-tablet-only{
+                @include title(26px, center, $color1);
+                margin-bottom: 70px;
+            }
+
+
+            //for phone
+            @include for-phone-only{
+                @include title(26px, center, $color1);
+                margin-bottom: 70px;
+             }   
         }
 
         &-cards{
-            width: 60%;
-            margin: auto;
+            @include wrapperCenter(60%,column);
             display: grid;
             grid-template: repeat(32,auto)/repeat(4,1Fr);
             justify-content: center;
+
+            //for tablet
+            @include for-tablet-only{
+                gap:0;
+            }
+            //for phone
+            @include for-phone-only{
+                grid-template: repeat(64,auto)/repeat(2,1Fr);
+            }
+
     
             .card{
 
-                width: 280px;
-                height: 280px;
+                width: 270px;
+                height: 270px;
                 @include displayflex(justify-content,center);
                 align-items: center;
                 flex-direction: column;
@@ -66,20 +113,56 @@
                 margin: 10px;
 
                 cursor: pointer;
+
+                //for tablet
+                @include for-tablet-only{
+                 width: 150px;
+                 height: 150px;
+                }
+
+                //for phone
+                @include for-phone-only{
+                    width: 147px;
+                    height: 246px;
+                }
     
     
                 &__img{
                     width: 180px;
                     height: 180px;
                     margin-bottom: 20px;
+
+                //for tablet
+                @include for-tablet-only{
+                    width: 80%;
+                    height: auto;
+                }
+
+                 //for phone
+                 @include for-phone-only{
+                    width: 127px;
+                    height: 127px;
+                }                   
+
+
                 }
     
                 &__desc{
-                    color: $color6;
-                    width:100%;
-                    text-align: center;
-                    @include fontSize(22px);
+                    @include text(22px, center, $color6);
                     font-weight: 600;
+
+                //for tablet
+                @include for-tablet-only{
+                    @include text(12px, center, $color6);
+                    font-weight: 700;
+                   }
+
+                //for phone
+                @include for-phone-only{
+                    @include text(14px, center, $color6);
+                    font-weight: 700;
+                   }
+
                 }
     
     

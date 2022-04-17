@@ -8,8 +8,9 @@ const Home = () => {
     <About/>
     <Depositions/>
     <Details/>
-    {/*
+    
     <Subjects/>
+    {/*
     <Bonus/>
     <FreeClass/>
     <SocialProof/>
