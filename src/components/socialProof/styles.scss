@@ -10,6 +10,16 @@
 
     @include displayflex(justify-content,center);
     align-items: center;
+
+    //for tablet
+    @include for-tablet-only{
+        @include fullscreen(100vw, auto);
+    }
+
+    //for phone
+    @include for-phone-only{
+        @include fullscreen(100vw, auto);
+    }
     
 
         &__content{
@@ -19,22 +29,42 @@
             flex-direction: column;
             align-items: center;
 
+
                     &-title{
-                        width: 100%;
-                        text-align: center;
-                        @include fontSize(33px);
-                        color: $color2;
-                        font-weight: 800;
+                        @include title(33px,center,$color2);
                         margin-bottom: 20px;
+
+                            //for tablet
+                            @include for-tablet-only{
+                                @include title(30px,center,$color2);
+                                margin-bottom: 10px;
+                            }
+
+                            //for phone
+                            @include for-phone-only{
+                                @include title(24px,center,$color1);
+                                margin-bottom: 10px;
+
+                                &::first-line{
+                                    color: $color2;
+                                }
+                            }
                     }
             
                     &-subtitle{
-                        width: 100%;
-                        text-align: center;
-                        @include fontSize(16px);
-                        color: $color5;
-                        font-weight: 400;
+                        @include title(16px,center,$color5);
                         margin-bottom: 20px;
+
+                            //for tablet
+                            @include for-tablet-only{
+                                @include subtitle(14px,center,$color5);
+                            }
+
+                            //for phone
+                            @include for-phone-only{
+                                @include subtitle(13px,center,$color5);
+                            }
+
                     }
             
                     &-cards{
@@ -42,10 +72,28 @@
                         grid-template: repeat(2,auto)/repeat(3,1Fr);
 
 
+                        //for phone
+                        @include for-phone-only{
+                         grid-template: repeat(2,auto)/repeat(1,1Fr); 
+                        }
+
+
                         .card{
                             width: 370px;
                             height: 240px;
                             margin: 10px;
+
+                            //for tablet
+                            @include for-tablet-only{
+                                width: 233px;
+                                height:154px;
+                            }
+
+                            //for phone
+                            @include for-phone-only{
+                                width: 333px;
+                                height:220px;
+                            }
 
                             &__img{
                                 width: 100%;

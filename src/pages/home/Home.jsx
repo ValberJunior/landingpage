@@ -11,8 +11,8 @@ const Home = () => {
     <Subjects/>
     <Bonus/>
     <FreeClass/>
-    {/*
     <SocialProof/>
+    {/*
     <Certificates/>
     <LifeTimeAccess/>
     <Garantee/>
