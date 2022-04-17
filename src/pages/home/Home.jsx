@@ -13,8 +13,8 @@ const Home = () => {
     <FreeClass/>
     <SocialProof/>
     <Certificates/>
-     {/*
     <LifeTimeAccess/>
+       {/*
     <Garantee/>
     <Promotion/>
     <Footer/> */}
