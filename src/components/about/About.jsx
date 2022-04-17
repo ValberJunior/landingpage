@@ -1,7 +1,7 @@
 import "./styles.scss";
-import Image from "../../assets/Ativo-1.png";
-import {TextAbout} from "../../data";
+import {DataAbout} from "../../data";
 
+const DATA = DataAbout;
 
 const About = () => {
   return (
@@ -9,15 +9,15 @@ const About = () => {
 
         <article className="about__content">
 
-            <figure className="about__content-image">
-                <img src={Image} alt="Ilustração de Manicure" className="about__content-image-icon"/>
+            <figure className="about__content-image .image">
+                <img src={DATA.img} alt={DATA.alt} className="image__icon"/>
             </figure>
 
-            <div className="about__content-desc">
-                <span className="about__content-desc-subtitle">{TextAbout.subtitle}</span>
-                <h2 className="about__content-desc-title">{TextAbout.title}</h2>
-                <p className="about__content-desc-desc">{TextAbout.desc}</p>
-                <p className="about__content-desc-desc">{TextAbout.desc2}</p>
+            <div className="about__content-desc .desc">
+                <span className="desc__subtitle">{DATA.subtitle}</span>
+                <h2 className="desc__title">{DATA.title}</h2>
+                <p className="desc__desc">{DATA.desc}</p>
+                <p className="desc__desc">{DATA.desc2}</p>
             </div>
 
         </article>

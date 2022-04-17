@@ -1,7 +1,7 @@
 @import "../../abstract/functions", "../../abstract/responsive", "../../abstract/variables";
 
 .about{
-    width: 100vw;
+    @include fullscreen(100vw, auto);
     background-color: $color6;
 
      &__content{
@@ -11,36 +11,93 @@
          @include displayflex(justify-content, space-around);
          align-items: center;
 
+         //for tablet
+         @include for-tablet-only{
+             width: 90%;
+
+             flex-direction: column;
+
+             padding: 20px 0px;
+         }
+
+         //for phone
+         @include for-phone-only{
+             width: 90%;
+             flex-direction: column;
+             padding: 20px 0px;
+         }
+
          &-image{
              width:45%;
 
-             &-icon{
-                 width:100%;
-                 padding: 10px 40px;
+             //for viewport desktop
+             @include for-desktop-only{
+                 text-align: center;
              }
+
+             //for tablet
+             @include for-tablet-only{
+                 width: 70%;
+             }
+
+             //for phone
+             @include for-phone-only{
+                 width: 100%;
+             }
+
+             .image{
+                        &__icon{
+                            width:100%;
+                            padding: 10px 40px;
+
+                            //for viewport - desktop
+                            @include for-desktop-only{
+                                width: 75%;
+                            }
+                        }
+                }
          }
 
          &-desc{
              width: 55%;
              padding: 10px 40px;
+
+             //for tablet
+             @include for-tablet-only{
+                 width: 95%;
+                 text-align: center;
+             }
+
+             //for phone
+             @include for-phone-only{
+                 width: 100%;
+                 text-align: center;
+             }
     
-             &-subtitle{
-                 font-family: $font-special;
-                 color: $color5;
-                 font-weight: 400;
-                 @include fontSize(14px);
-             }
-             &-title{
-                 color: $color1;
-                 font-weight: 800;
-                 @include fontSize(30px);
-                 margin-top: 15px;
-             }
-             &-desc{
-                 color: $color-text;
-                 font-weight: 400;
-                 @include fontSize(16px);
-                 margin-top: 15px;
+             .desc{
+
+                &__subtitle{
+                    font-family: $font-special;
+                    color: $color5;
+                    font-weight: 400;
+                    @include fontSize(14px);
+                }
+                &__title{
+                    @include title(30px, start, $color1);
+                    margin-top: 15px;
+
+                    //for phone
+                    @include for-phone-only{
+                        @include title(23px, center, $color1);
+                        margin-bottom: 20px;
+                    }
+                }
+
+                &__desc{
+                    @include text(16px, start, $color-text);
+                    margin-top: 15px;
+                }
+
              }
          }
      }

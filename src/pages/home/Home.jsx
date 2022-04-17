@@ -5,7 +5,8 @@ const Home = () => {
   return (
     <>
     <Header/>
-    {/* <About/>
+    <About/>
+    {/*
     <Depositions/>
     <Details/>
     <Subjects/>

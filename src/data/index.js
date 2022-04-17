@@ -10,8 +10,13 @@ export const DataHeader = {
         link: `https://go.hotmart.com/T69286431V?ap=1912` //checkout 99
     }
 
-export const TextAbout = 
+
+//About
+
+export const DataAbout = 
 {   
+    img:"https://unhasprofissionais.com/wp-content/uploads/2021/10/Ativo-1.png",
+    alt:"Ilustração de Manicure",
     subtitle:"ESCOLA DESIGNER DE UNHAS",
     title:"Primeiro curso de Alongamento de Unhas Avançado, com acesso vitalício e 2 Certificados!",
     desc:"Todas as aulas foram pensadas e desenvolvidas de forma minuciosa para que você aprenda tudo e se torne uma verdadeira especialista em Alongamento de Unhas, mesmo que esteja começando do zero.",
