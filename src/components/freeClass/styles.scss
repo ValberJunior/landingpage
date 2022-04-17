@@ -13,6 +13,11 @@
         @include displayflex(justify-content,center);
         align-items: center;
 
+        //for tablet
+        @include for-tablet-only{
+            padding: 5px 0px;
+        }
+
 
         .content{
             width: 80%;
@@ -21,13 +26,22 @@
             flex-direction: column;
             align-items: center;
 
+            //for tablet
+            @include for-tablet-only{
+                width: 70%;
+            }
+
             &__title{
-                width: 100%;
-                text-align: center;
-                @include fontSize(33px);
-                color: $color2;
-                font-weight: 800;
+                @include title(33px, center, $color6);
                 margin-top: 20px;
+
+                //phone
+                @include for-phone-only{
+
+                    &::first-line{
+                        color: $color2;
+                    }
+                }
             }
 
             &__subtitle{
@@ -42,8 +56,20 @@
             &__video{
                     border: 2px solid $color6;
                     border-radius: 10px;
-
+                    width:876px;
+                    height:493px;
                     margin-bottom: 30px;
+
+                    //for tablet
+                    @include for-tablet-only{
+                        width: 620px;
+                        height: 340px;
+                    }
+                    //for phone
+                    @include for-phone-only{
+                        width: 309px;
+                        height: 174px;
+                    }
             }
         }
     }

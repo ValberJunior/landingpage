@@ -25,7 +25,7 @@ const FreeClass = () => {
                 <h3 className="content__subtitle">{SUBTITLE}</h3>
                 <SmallWave width="122px" color={COLOR}/>
 
-                <iframe width="876" height="493"
+                <iframe
                 className="content__video"
                 src="https://www.youtube.com/embed/9z6dp8gv2NU" 
                 title="YouTube video player" 

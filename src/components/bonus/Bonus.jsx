@@ -3,8 +3,8 @@ import { DataBonus } from "../../data";
 
 const Bonus = () => {
 
-  const TITLE = DataBonus[0].title;
-  const CARDS = DataBonus[0].cards;
+  const TITLE = DataBonus.title;
+  const CARDS = DataBonus.cards;
 
   return (
     <section className="bonus">

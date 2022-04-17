@@ -2,7 +2,7 @@ import { DataSubjects } from "../../data";
 import WavesDividerBottom from "../wavesDivider/WavesDividerBottom";
 import "./styles.scss";
 
-const DATA = DataSubjects[0];
+const DATA = DataSubjects;
 const CARDS = DATA.cards;
 const COLOR = "#FFFFFF";
 

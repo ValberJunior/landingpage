@@ -84,8 +84,7 @@ export const DataDetails =
 
 //Subjects
 
-export const DataSubjects = [
-
+export const DataSubjects = 
     {
         title:"O Que Você Vai Aprender?",
         subtitle: "VEJA UM POUCO DO QUE VOCÊ VAI APRENDER",
@@ -220,14 +219,12 @@ export const DataSubjects = [
              id:32},
 
         ]
-    }
+    };
     
-]
 
 //Bonus
 
-export const DataBonus = [
-
+export const DataBonus = 
     {
         title:"Adquira Hoje e Receba 03 Bônus Especiais!",
         cards:[
@@ -257,9 +254,7 @@ export const DataBonus = [
             },
             
         ]
-    }
-
-];
+    };
 
 //Free class
 
