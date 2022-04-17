@@ -1,15 +1,11 @@
 import "./styles.scss";
-import { TextDepositions } from "../../data"; 
-
-import Image1 from "../../assets/1DU.png";
-import Image2 from "../../assets/3DU.png";
-import Image3 from "../../assets/2DU.png";
-import Image4 from "../../assets/4DU.png";
+import { DataDepositions } from "../../data"; 
 import SmallWave from "../smallWave/SmallWave";
 import DividerTop from "../divider/DividerTop";
 import DividerBottom from "../divider/DividerBottom";
 
-
+const DATA = DataDepositions;
+const IMAGES = DATA.images;
 const COLOR = "#420e1f";
 
 const Depositions = () => {
@@ -20,25 +16,29 @@ const Depositions = () => {
 
       <DividerTop/>
 
-        <div className="depositions">
+        <article className="depositions">
 
-              <article class="depositions__desc">
-                  <div className="depositions__desc-content">
-                      
-                      <h2 className="depositions__desc-content-title">{TextDepositions.title}</h2>
-                      <h3 className="depositions__desc-content-subtitle">{TextDepositions.subtitle}</h3> 
-                      <SmallWave width="122px" color={COLOR}/>
+              <div class="depositions__container">
+                    <div className="depositions__container-content">
+                        
+                        <h2 className="depositions__container-content title">{DATA.title}</h2>
+                        <h3 className="depositions__container-content subtitle">{DATA.subtitle}</h3> 
+                        <SmallWave width="122px" color={COLOR}/>
 
-                      <div className="depositions__desc-images">
-                          <img src={Image1} alt="" className="depositions__desc-images-image" />
-                          <img src={Image2} alt="" className="depositions__desc-images-image" />
-                          <img src={Image3} alt="" className="depositions__desc-images-image" />
-                          <img src={Image4} alt="" className="depositions__desc-images-image" />
-                      </div>  
+                        <div className="depositions__container-images images">
+                            {
+                              IMAGES.map((image)=>{
+                                return(
+                                  <img src={image.img} alt={image.alt} className="images__img" key={image.id}/>
+                                )
+                              })
+                            }
+                        </div>  
 
-                  </div>
-              </article>
-        </div>
+                    </div>
+              </div>
+              
+        </article>
 
         <DividerBottom/>
 

@@ -24,10 +24,34 @@ export const DataAbout =
 
 }
 
-export const TextDepositions = 
+//Depositions
+
+export const DataDepositions = 
 {
     title: "Alunas Que Fizeram e Aprovam O Curso!",
-    subtitle: "VOCÊ VAI SER A PRÓXIMA!"
+    subtitle: "VOCÊ VAI SER A PRÓXIMA!",
+    images:[
+        {
+            img:"https://unhasprofissionais.com/wp-content/uploads/2021/10/1DU.png",
+            alt:"Aluna com certificado",
+            id:"1"
+        },
+        {
+            img:"https://unhasprofissionais.com/wp-content/uploads/2021/10/3DU.png",
+            alt:"Aluna com certificado",
+            id:"2"
+        },
+        {
+            img:"https://unhasprofissionais.com/wp-content/uploads/2021/10/2DU.png",
+            alt:"Aluna com certificado",
+            id:"3"
+        },
+        {
+            img:"https://unhasprofissionais.com/wp-content/uploads/2021/10/4DU.png",
+            alt:"Aluna com certificado",
+            id:"4"
+        }
+    ]
 }
 
 export const TextDetails = 
