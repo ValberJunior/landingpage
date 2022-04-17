@@ -1,21 +1,22 @@
 import "./styles.scss";
-import {TextDetails} from "../../data";
+import {DataDetails} from "../../data";
 
+const DATA = DataDetails;
 
 function Details() {
   return (
     <section className="details">
 
         <article className="details__content">
-            <h2 className="details__content-title">{TextDetails.title} </h2>
+            <h2 className="details__content-title">{DATA.title} </h2>
 
-            <div className="details__content-cards">
+            <div className="details__content-cards .card">
                     {
-                            TextDetails.cards.map((item)=>{
-                                return( <div className="details__content-cards-card">
-                                            <img src={item.icon} className="details__content-cards-card-icon" alt="icon"/>
-                                            <h3 className="details__content-cards-card-title">{item.title}</h3>
-                                            <p className="details__content-cards-card-desc">{item.desc}</p>
+                            DATA.cards.map((item)=>{
+                                return( <div className="card__body" key={item.id}>
+                                            <img src={item.icon} className="card__body-icon" alt={item.alt}/>
+                                            <h3 className="card__body-title">{item.title}</h3>
+                                            <p className="card__body-desc">{item.desc}</p>
                                         </div> );
                                 })
                     }

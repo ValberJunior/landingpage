@@ -1,60 +1,100 @@
 @import "../../abstract/functions", "../../abstract/responsive", "../../abstract/variables";
 
 .details{
-    margin: 90px 0px;
+
+    @include fullscreen(100vw, auto);
+    // margin: 90px 0px;
+
+    padding: 90px 0px;
 
     &__content{
-        width: 60%;
-        margin: auto;
 
-        &-title{
-            width: 50%;
-            margin: auto;
-            @include fontSize(33px);
-            color: $color2;
-            font-weight: 800;
+        @include wrapperCenter(60%, column);
+        margin:auto;
+
+        //for tablet
+        @include for-tablet-only{
+            @include wrapperCenter(90%, column);
         }
 
-        &-cards{
+        //for phone
+        @include for-phone-only{
+            @include wrapperCenter(95%, column);
+        }
 
-            width: 100%;
-            margin-top:15px;
-            
-            @include displayflex(justify-content,center);
+            &-title{
+                @include title(33px, center, $color2);
+                width: 50%;
+                margin-bottom: 15px;
 
-            &-card{
-                width: 360px;
-                height: 280px;
+                &::first-line{
+                    color: $color1;
+                }
 
-                margin: 5px;
-                padding: 5px;
+                //for tablet
+                @include for-tablet-only{
+                    width: 100%;
+                }
 
-                background-color: $color3;
-                color: $color2;
-                border-radius: 20px;
-                @include displayflex(justify-content, center);
-                flex-direction: column;
-                align-items: center;
-
-                text-align: center;
-    
-                    &-icon{
-                        width: 60px;
-                    }
-    
-                    &-title{
-                        @include fontSize(20px);
-                        font-weight: 700;
-                        margin-top: 10px;
-                    }
-    
-                    &-desc{
-                        @include fontSize(16px);
-                        font-weight: 400;
-                        margin-top: 10px;
-                    }
+                //for phone
+                @include for-phone-only{
+                    width: 100%;
+                    @include fontSize(24px);
+                }
             }
-        }
+    
+
+            &-cards{
+
+                width: 100%;
+                margin-top:15px;
+                
+                @include displayflex(justify-content,center);
+
+                //for phone
+                @include for-phone-only{
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .card{
+                    &__body{
+                        width: 360px;
+                        height: 280px;
+    
+                        margin: 5px;
+                        padding: 5px 15px;
+    
+                        background-color: $color3;
+
+                        border-radius: 20px;
+                        @include displayflex(justify-content, center);
+                        flex-direction: column;
+                        align-items: center;
+
+                        //for phone
+                        @include for-phone-only{
+                            width: 330px;
+                            height: 280px;
+                        }
+            
+                            &-icon{
+                                width: 60px;
+                            }
+            
+                            &-title{
+                                @include title(20px, center, $color2);
+                                margin-top: 15px;
+                                font-weight: 700;
+                            }
+            
+                            &-desc{
+                                @include text(15px, center, $color2);
+                                margin-top: 15px;
+                            }
+                    }
+                }
+            }
     
     }
 }

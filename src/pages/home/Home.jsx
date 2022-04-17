@@ -7,8 +7,8 @@ const Home = () => {
     <Header/>
     <About/>
     <Depositions/>
-     {/*
     <Details/>
+    {/*
     <Subjects/>
     <Bonus/>
     <FreeClass/>
