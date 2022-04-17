@@ -14,8 +14,8 @@ const Home = () => {
     <SocialProof/>
     <Certificates/>
     <LifeTimeAccess/>
-       {/*
     <Garantee/>
+      {/*
     <Promotion/>
     <Footer/> */}
     </>

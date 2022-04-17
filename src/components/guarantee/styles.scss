@@ -8,35 +8,128 @@
 
     padding: 100px 0;
 
+    //for tablet
+    @include for-tablet-only{
+        background-color: $color4;
+        padding: 50px 0;
+    }
+
+    //for phone
+    @include for-phone-only{
+        background-color: $color4;
+        padding: 50px 0;
+    }
+
         &__container{
 
             @include wrapperCenter(80%,row);
 
+            //for tablet
+            @include for-tablet-only{
+                @include wrapperCenter(90%,row);
+            }
+
+            //for phone
+            @include for-phone-only{
+                @include wrapperCenter(95%,row);
+            }            
+
+
             .content{
 
                 @include displayflex(justify-content,space-between);
+
+                //for tablet
+                @include for-tablet-only{
+                    flex-direction: column-reverse;
+                }
+
+                //for phone
+                @include for-phone-only{
+                    flex-direction: column-reverse;
+                }                
               
                
                 &__img{
                     width: 470px;
+
+                //for tablet
+                @include for-tablet-only{
+                    width: 501px;
+                    margin-bottom: 20px;
+                }
+
+                //for phone
+                @include for-phone-only{
+                    width: 282px;
+                    margin-bottom: 20px;
+                }                     
+
                 }
 
                 &__desc{
 
                     width: 55%;
 
+
+                    //for tablet
+                    @include for-tablet-only{
+                        width: 95%;
+                        text-align: center;
+                    }  
+
+                    //for phone
+                    @include for-phone-only{
+                        width: 90%;
+                        text-align: center;
+                    }  
+
+
                     &-subtitle{
                         @include subtitle(14px, start ,$color5);
+                        
+                        //for tablet
+                        @include for-tablet-only{
+                            text-align: center;
+                        }                           
+
+                        //for phone
+                        @include for-phone-only{
+                            text-align: center;
+                        }                          
+
                     }
 
                     &-title{
                         @include title(30px,start,$color2);
                         margin-top: 15px;
+
+                        //for tablet
+                        @include for-tablet-only{
+                           text-align: center;
+                        } 
+                        
+                        //for phone
+                        @include for-phone-only{
+                            @include title(23px,center,$color2);
+                        }    
+                        
                     }
 
                     &-text{
                         @include text(17px, start, $color2);
                         margin-top: 15px;
+
+                        //for tablet
+                        @include for-tablet-only{
+                            width: 95%;
+                            text-align: center;
+                        } 
+                        //for phone
+                        @include for-phone-only{
+                            text-align: center;
+                        }      
+                        
                     }
 
                 }

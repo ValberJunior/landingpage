@@ -93,7 +93,7 @@
 
                         //for phone
                         @include for-phone-only{
-                            text-align: center;
+                            @include title(23px,center,$color2);
                         }
                     
                     }
