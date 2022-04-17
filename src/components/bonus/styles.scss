@@ -11,50 +11,87 @@
     &__content{
         width: 70%;
 
+        //for tablet
+        @include for-tablet-only{
+            width: 90%;
+        }
+
+        //for phone
+        @include for-phone-only{
+            width: 95%;
+        }
+
         &-title{
-            width: 100%;
-            text-align: center;
-            @include fontSize(30px);
-            font-weight: 800;
-            color: $color2;
+            @include title(30px,center,$color2);
+
+            //for phone
+            @include for-phone-only{
+                @include title(25px,center,$color1);
+
+                &:first-line{
+                    color: $color2;
+                }
+            }
+
         }
 
         &-cards{
             @include displayflex(justify-content,center);
             align-items: center;
+
+            //for phone
+            @include for-phone-only {
+                flex-direction: column;
+            }
             
             .card{
                 width: 363px;
                 height: 434px;
+
                 @include displayflex(justify-content,center);
                 align-items: center;
                 flex-direction: column;
 
+                //for tablet
+                @include for-tablet-only{
+                    width: 225px;
+                    height: 420px;
+
+                    text-align: center;
+                    padding:10px;
+                }
+
                 &__img{
                     width:220px;
+
+                    //for tablet
+                    @include for-tablet-only{
+                        width: 123px;
+                    }
+
+                    //for phone
+                    @include for-phone-only{
+                        width: 184px;
+                        height: 191px;
+                    }
                 }
 
                 &__title{
-                    @include fontSize(23px);
-                    color: $color1;
+                    @include title(23px,center,$color1);
                     font-weight: 400;
                     margin-top: 15px;
+                   
                 }
 
                 &__subtitle{
-                    @include fontSize(20px);
-                    color: $color2;
+                    @include subtitle(20px, center, $color2);
                     font-weight: 700;
                     margin-top: 15px;
                 }
 
                 &__desc{
-                    @include fontSize(16px);
-                    font-weight: 400;
-                    color: $color-text;
-
+                    @include text(16px, center, $color-text);
                     margin-top: 15px;
-                    text-align: center;
                 }
             }
         }
