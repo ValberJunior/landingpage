@@ -45,11 +45,7 @@
             }
 
             &__subtitle{
-                width: 100%;
-                text-align: center;
-                @include fontSize(16px);
-                color: $color6;
-                font-weight: 400;
+                @include subtitle(16px, center, $color6);
                 margin-top: 20px;
             }
 
