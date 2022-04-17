@@ -1,10 +1,10 @@
 import "./styles.scss";
-import Logo from "../../assets/logoUnhas.png";
 import { Button } from "../../components";
-import { Text } from "../../data";
+import { DataHeader} from "../../data";
 import WavesDividerBottom from "../wavesDivider/WavesDividerBottom";
 
 const COLOR = "#FFFFFF";
+const DATA = DataHeader;
 
 const Header = () => {
 
@@ -13,24 +13,26 @@ const Header = () => {
         
         <div className="header__wrapper">
 
-            <div className="header__logo">
-                <img src={Logo} alt="Logo Unhas" arial-label="Logo do Curso" className="header__logo-img"/>
+            <div className="header__wrapper-logo .logo">
+                <img src={DATA.logo} alt={DATA.alt} arial-label="Logo do Curso" className="logo__img"/>
             </div>
 
-            <div className="header__description">
-                <div className="header__description-text">
+            <div className="header__wrapper-description description">
+                <div className="description__text">
 
-                 <h2 className="header__description-text-title">{Text.title}</h2>
-                 <p className="header__description-text-desc">{Text.desc}</p>
+                 <h2 className="description__text-title">{DATA.title}</h2>
+                 <p className="description__text-desc">{DATA.desc}</p>
 
-                  <Button>
-                    {Text.button}
-                  </Button>
+                <a href={DATA.link}>
+                    <Button>
+                        {DATA.button}
+                      </Button>
+                </a>
 
                 </div>
 
-                <iframe className="header__video"
-                width="536" height="302" src="https://www.youtube.com/embed/6ggxcAidO28"
+                <iframe className="description__video"
+                 src="https://www.youtube.com/embed/6ggxcAidO28"
                 title="YouTube video player" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
                 </iframe>

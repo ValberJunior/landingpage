@@ -1,7 +1,8 @@
 export { default as Header } from "./header/Header";
 export { default as Button } from "./button/Button"; 
 export {default as About} from "./about/About";
-export {default as Divider} from "./divider/Divider";
+export {default as DividerTop} from "./divider/DividerTop";
+export {default as DividerBottom} from "./divider/DividerBottom";
 export { default as Depositions } from "./depositions/Depositions";
 export { default as Details} from "./details/Details";
 export { default as Subjects} from "./subjects/Subjects";

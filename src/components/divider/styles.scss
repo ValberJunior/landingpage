@@ -1,10 +1,44 @@
-@import "../../abstract/functions", "../../abstract/responsive", "../../abstract/variables";
 
-.dividerUp
-{
-    width: 100vw;
+.dividerTop {
+    position: relative;
+    background: #FFFFFF;
+    height: auto;
+  }
+  
+  .dividerTop::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: -0%;
+    top: 100%;
+    z-index: 10;
+    display: block;
+    height: 15px;
+    background-size: 15px 100%;
+    background-image: linear-gradient(135deg, #FFFFFF 25%, transparent 25%), linear-gradient(225deg, #FFFFFF 25%, transparent 25%);
+    background-position: 0 0;
+  }
 
+
+
+.dividerBottom {
+    position: relative;
+    background: #FFFFFF;
+    height: auto;
     -ms-transform: rotate(180deg); /* IE 9 */
     transform: rotate(180deg);
-
-}
+  }
+  
+  .dividerBottom::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: -0%;
+    top: 100%;
+    z-index: 10;
+    display: block;
+    height: 15px;
+    background-size: 15px 100%;
+    background-image: linear-gradient(135deg, #FFFFFF 25%, transparent 25%), linear-gradient(225deg, #FFFFFF 25%, transparent 25%);
+    background-position: 0 0;
+  }

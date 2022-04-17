@@ -2,63 +2,151 @@
 
 .header{
 
-    width: 100vw;
-    height: 80vh;
+   @include fullscreen(100vw, auto);
+    @include backgroundImage("../../assets/banner.png");
+    padding: 90px 0px;
 
-    background-image: url("../../assets/banner.png");
-    background-size: cover;
-    filter: contrast(82%);
+    position: relative;
 
-    @include displayflex(justify-content, flex-start);
-    align-items: center;
-    flex-direction: column;
 
+    //Version tablet
+    @include for-tablet-only{
+        @include wrapperCenter(100%,column); 
+    }
+
+    //For Phone
+    @include for-phone-only{
+        @include wrapperCenter(100%,column); 
+    }
 
     &__wrapper{
-        width: 80%;
-        margin: auto;
 
-    }
+            @include wrapperCenter(80%,column);
+            margin: auto;
 
-    &__logo{
-        width: 100%;
-        text-align: center;
 
-        &-img{
-            height: 11vh;
-        }
-    }
+                //Version tablet
+                @include for-tablet-only{
+                  @include wrapperCenter(80%,column); 
+                }
 
-    &__description{
+                //version phone
+                @include for-phone-only{
+                    @include wrapperCenter(85%,column); 
+                }
 
-        @include displayflex(justify-content, space-evenly);
 
-        padding: 20px;
-        margin-top: 40px;
+            &-logo{
+                width: 100%;
+                text-align: center;
 
-        &-text{
-            width: 40%;
-            text-align: center;
+                .logo{
 
-            &-title{
+                    &__img{
+                        height: 10vh;
+                        margin-bottom: 15px;
 
-                @include fontSize(38px);
-                font-weight: 700;
-                color: $color6;
+                        //Version tablet
+                        @include for-tablet-only{
+                         height: 8.5vh;
+                         margin-bottom: 5px;
+                         margin-top: 15px;
+                        }
+
+                        //Version phone
+                        @include for-phone-only{
+                         height: 8vh;
+                         margin-top: 25px;
+                        }
+                    }
+
+                }
+
+            }
+
+            &-description{
+
+                @include displayflex(justify-content, space-evenly);
+
+                padding: 20px 0px;
+                margin-top: 40px;
+
+                //Version tablet
+                 @include for-tablet-only{
+                    margin-top: 10px;
+                    flex-direction: column-reverse;
+                    }
+                //Version phone
+                @include for-phone-only{
+                    margin-top: 0px;
+                    flex-direction: column-reverse;
+                    }
                 
+                .description
+                    {
+                            &__text{
+                                width: 35%;
+                                text-align: start;
+
+                                //version tablet
+                                @include for-tablet-only{
+                                    width: 100%;
+                                }
+
+                                //version phone
+                                @include for-phone-only{
+                                    width: 100%;
+                                }
+
+                                    &-title{
+                                    @include title(38px, start, $color6);
+                                    
+                                    //for tablet
+                                    @include for-tablet-only{
+                                        @include title(27px, start, $color6);
+                                    }
+                                    //for phone
+                                    @include for-phone-only{
+                                        @include title(24px, center, $color6); 
+                                        margin-top: 15px;
+                                     }
+                                    }
+                                    
+                                    &-desc{
+                                    @include text(18px,start,$color2);
+                                     padding: 15px 0px;
+
+                                    //for phone
+                                    @include for-phone-only{
+                                        @include text(14px, center, $color2); 
+                                     }
+                                    }
+                             }
+
+                             &__video{
+                                border: 2px solid $color6;
+                                border-radius: 10px;
+                                width: 536px;
+                                height: 302px;
+
+                                //for Tablet
+                                @include for-tablet-only{
+                                    width: 100%;
+                                    height: 400px;
+
+                                    margin-bottom:20px
+                                }
+                                
+                                //for phone
+                                @include for-phone-only{
+                                    width: 100%;
+                                    height: 300px;
+                                }
+                            }
+                    }
+
+
             }
 
-            &-desc{
-                @include fontSize(16px);
-                font-weight: 400;
-                color: $color2;
-                padding: 15px 0px;
-            }
-        }
-    }
-
-    &__video{
-        border: 2px solid $color6;
-        border-radius: 10px;
     }
 }

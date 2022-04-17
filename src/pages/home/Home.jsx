@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>
     <Header/>
-    <About/>
+    {/* <About/>
     <Depositions/>
     <Details/>
     <Subjects/>
@@ -16,7 +16,7 @@ const Home = () => {
     <LifeTimeAccess/>
     <Garantee/>
     <Promotion/>
-    <Footer/>
+    <Footer/> */}
     </>
   )
 }

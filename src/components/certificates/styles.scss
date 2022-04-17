@@ -3,44 +3,48 @@
 .certificates{
 
     @include fullscreen(100vw,auto);
-
-    padding: 80px 0px;
-
     @include backgroundImage("../../assets/banner3.png");
 
-    @include dashedBorder(8px,white);
 
-    @include displayflex(justify-content,center);
 
-        &__content{
-            @include wrapperCenter(50%,column);
+        &__container{
 
-            &-title{
-                @include title(35px,center,$color1);
-                margin-bottom: 20px;
-            }
+            padding: 40px 0px;
+            @include displayflex(justify-content,center);
 
-            &-desc{
 
-                width:70%;
-                text-align: center;
-                color: $color2;
-                @include fontSize(16px);
-                font-weight: 400;
-
-                margin-bottom: 15px;
-
-            }
-
-            &-seal{
-                width: 170px;
-                height: 170px;
-                margin-bottom: 15px;
-            }
-
-            &-images{
-                width: 550px;
-                margin-top: 15px;
-            }
+                .content{
+                    @include wrapperCenter(50%,column);
+        
+                    &__title{
+                        @include title(35px,center,$color1);
+                        margin-bottom: 20px;
+                    }
+        
+                    &__desc{
+        
+                        width:70%;
+                        text-align: center;
+                        color: $color2;
+                        @include fontSize(16px);
+                        font-weight: 400;
+        
+                        margin-bottom: 15px;
+        
+                    }
+        
+                    &__seal{
+                        width: 170px;
+                        height: 170px;
+                        margin-bottom: 15px;
+                    }
+        
+                    &__images{
+                        width: 550px;
+                        margin-top: 15px;
+                    }
+                }
         }
+
+        
 }
