@@ -31,6 +31,11 @@
                 width: 70%;
             }
 
+            //for phone
+            @include for-phone-only{
+                width: 95%;
+            }
+
             &__title{
                 @include title(33px, center, $color6);
                 margin-top: 20px;
