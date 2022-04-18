@@ -16,8 +16,7 @@ const Home = () => {
     <LifeTimeAccess/>
     <Garantee/>
     <Promotion/>
-         {/*
-    <Footer/> */}
+    <Footer/>
     </>
   )
 }

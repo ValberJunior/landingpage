@@ -16,6 +16,23 @@
         @include fontSize(14px);
         font-weight: 400;
 
+
+          //for phone
+            @include for-phone-only{
+              @include fontSize(12px);
+              text-align: center;
+           }
+
+        //for tablet
+        @include for-tablet-only{
+            @include wrapperCenter(80%,column);
+        }
+
+        //for phone
+        @include for-phone-only{
+            @include wrapperCenter(80%,column);
+        }
+
         .content{
 
             &__links{
@@ -27,8 +44,19 @@
 
                 margin-bottom: 10px;
 
+                //for phone
+                @include for-phone-only{
+                    width: 80%;
+                    flex-direction: column;
+                }
+
                 &-link{
                     @include reset-link($color6);
+
+                    //for phone
+                    @include for-phone-only{
+                    margin-bottom: 10px;
+                         }
                 }
     
             }
