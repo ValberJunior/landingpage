@@ -12,11 +12,13 @@
     //Version tablet
     @include for-tablet-only{
         @include wrapperCenter(100%,column); 
+        padding: 20px 0px 80px 0px;
     }
 
     //For Phone
     @include for-phone-only{
         @include wrapperCenter(100%,column); 
+        padding: 20px 0px 80px 0px;
     }
 
     &__wrapper{
