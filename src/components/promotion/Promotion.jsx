@@ -3,7 +3,7 @@ import Button from "../button/Button";
 import { DataPromotion } from "../../data";
 import "./styles.scss";
 
-const COLOR = "#FFFFFF";
+const COLOR = "#E8E8E8";
 const DATA = DataPromotion;
 
 const Promotion = () => {

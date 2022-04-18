@@ -4,8 +4,8 @@
 
     @include fullscreen(100vw, auto);
     padding: 40px 0px;
-    background-color: $color7;
-  
+    @include backgroundImage("../../assets/banner5.png");
+    
     @include displayflex(justify-content,center);
     align-items: center;
 

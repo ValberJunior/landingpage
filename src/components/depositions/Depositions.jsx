@@ -14,8 +14,6 @@ const Depositions = () => {
   return (
     <section>
 
-      <DividerTop/>
-
         <article className="depositions">
 
               <div class="depositions__container">
@@ -39,8 +37,6 @@ const Depositions = () => {
               </div>
               
         </article>
-
-        <DividerBottom/>
 
     </section>
   )
