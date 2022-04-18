@@ -15,8 +15,8 @@ const Home = () => {
     <Certificates/>
     <LifeTimeAccess/>
     <Garantee/>
-      {/*
     <Promotion/>
+         {/*
     <Footer/> */}
     </>
   )

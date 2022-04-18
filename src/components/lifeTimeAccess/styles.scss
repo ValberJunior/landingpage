@@ -3,7 +3,7 @@
 .lifeTimeAccess{
 
     @include fullscreen(100vw,auto);
-    background: linear-gradient($color6,$color4);
+    background: linear-gradient($color6,$color4, $color4, $color4);
     @include displayflex(justify-content,center);
     padding: 50px 0;
 

@@ -10,13 +10,11 @@
 
     //for tablet
     @include for-tablet-only{
-        background-color: $color4;
         padding: 50px 0;
     }
 
     //for phone
     @include for-phone-only{
-        background-color: $color4;
         padding: 50px 0;
     }
 
