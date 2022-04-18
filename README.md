@@ -1,6 +1,7 @@
 # Projeto de uma landing page com dados dinâmicos e utilizando pré processador SASS.
+![Pink and White Modern Business Instagram Post](https://user-images.githubusercontent.com/84424883/163746381-c5fc1a7d-aabf-4c46-b2e4-2cac735b929a.png)
 
-![Pink and White Modern Business Instagram Post](https://user-images.githubusercontent.com/84424883/163745377-dc9db9d6-e2e8-46e1-9f46-ced68010a1cf.png)
+
 
 ## Print da Tela completa
 
