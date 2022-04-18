@@ -2,8 +2,8 @@
 
 .depositions{
 
-    @include fullscreen(100vw, 60vh);
-    margin-top: 30px;
+    @include fullscreen(100vw, auto);
+    padding: 40px 0px;
     background-color: $color7;
   
     @include displayflex(justify-content,center);

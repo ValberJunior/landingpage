@@ -69,19 +69,19 @@
         &-titlefooter{
             @include title(38px, center, $color1);
             margin-top: 20px;
-            margin-bottom: 70px;
+            margin-bottom: 80px;
 
             //for tablet
             @include for-tablet-only{
                 @include title(26px, center, $color1);
-                margin-bottom: 70px;
+                margin-bottom: 80px;
             }
 
 
             //for phone
             @include for-phone-only{
                 @include title(26px, center, $color1);
-                margin-bottom: 70px;
+                margin-bottom: 80px;
              }   
         }
 
@@ -116,8 +116,8 @@
 
                 //for tablet
                 @include for-tablet-only{
-                 width: 150px;
-                 height: 150px;
+                 width: 180px;
+                 height: 180px;
                 }
 
                 //for phone
