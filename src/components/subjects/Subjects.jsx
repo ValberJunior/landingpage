@@ -1,5 +1,6 @@
 import { DataSubjects } from "../../data";
 import WavesDividerBottom from "../wavesDivider/WavesDividerBottom";
+import DividerTiltTop from "../divider/DividerTiltTop"
 import "./styles.scss";
 
 const DATA = DataSubjects;
@@ -10,6 +11,8 @@ const Subjects = () => {
 
   return (
     <section className="subjects">
+
+      <DividerTiltTop/>
 
         <article className="subjects__content">
 

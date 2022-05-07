@@ -17,11 +17,11 @@ const SocialProof = () => {
             <h2 className="socialProof__content-title">{TITLE}</h2>
             <h3 className="socialProof__content-subtitle">{SUBTITLE}</h3>
 
-            <div className="socialProof__content-cards" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+            <div className="socialProof__content-cards" data-aos-anchor-placement="top-bottom">
                     {
                         CARDS.map((card)=>{
                             return (
-                                                <div className="card__body-cards card" key={card.id}>
+                                                <div className="card__body-cards card" key={card.id} data-aos="fade-up" >
                                                     <img src={card.image} alt={card.alt} className="card__img"/>
                                                 </div>
                                     )

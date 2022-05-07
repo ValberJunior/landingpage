@@ -10,7 +10,7 @@ const About = () => {
         <article className="about__content">
 
             <figure className="about__content-image .image">
-                <img src={DATA.img} alt={DATA.alt} className="image__icon" data-aos="zoom-out-up"/>
+                <img src={DATA.img} alt={DATA.alt} className="image__icon" data-aos="zoom-in"/>
             </figure>
 
             <div className="about__content-desc .desc">

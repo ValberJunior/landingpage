@@ -6,7 +6,8 @@
     align-items: center;
     flex-direction: column;
 
-    padding: 40px 0px;
+    padding: 100px 0px;
+
 
     &__content{
         width: 70%;
@@ -23,6 +24,7 @@
 
         &-title{
             @include title(30px,center,$color2);
+            margin-bottom: 30px;
 
             //for phone
             @include for-phone-only{

@@ -1,18 +1,19 @@
 import "./styles.scss";
 import { DataDepositions } from "../../data"; 
-import SmallWave from "../smallWave/SmallWave";
+import DividerTiltBottom from "../divider/DividerTiltBottom";
+
+
 
 
 const DATA = DataDepositions;
 const IMAGES = DATA.images;
-const COLOR = "#420e1f";
 
 const Depositions = () => {
 
 
   return (
-    <section>
-
+    <section className="sectionDepositions">
+    
         <article className="depositions">
 
               <div class="depositions__container">
@@ -20,7 +21,6 @@ const Depositions = () => {
                         
                         <h2 className="depositions__container-content title" data-aos="fade-zoom-in">{DATA.title}</h2>
                         <h3 className="depositions__container-content subtitle">{DATA.subtitle}</h3> 
-                        <SmallWave width="122px" color={COLOR}/>
 
                         <div className="depositions__container-images images">
                             {
@@ -34,9 +34,9 @@ const Depositions = () => {
 
                     </div>
               </div>
-              
         </article>
-
+        
+      <DividerTiltBottom/>
     </section>
   )
 }

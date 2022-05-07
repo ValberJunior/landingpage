@@ -2,8 +2,6 @@ import "./styles.scss";
 import { DataFreeClass } from "../../data";
 import Button from "../button/Button";
 import SmallWave from "../smallWave/SmallWave";
-import DividerTop from "../divider/DividerTop";
-import DividerBottom from "../divider/DividerBottom";
 
 const COLOR = "#420e1f";
 
@@ -16,7 +14,6 @@ const FreeClass = () => {
     
   return (
     <section className="freeClass">
-      <DividerTop/>
 
        <article className="freeClass__container">
             <div className="freeClass__container content">
@@ -38,7 +35,6 @@ const FreeClass = () => {
             </div>
        </article>
 
-      <DividerBottom/>
     </section>
   )
 

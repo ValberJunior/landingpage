@@ -20,7 +20,8 @@
 
                    //for phone
                    @include for-phone-only{
-                    @include wrapperCenter(95%,column);
+                    @include wrapperCenter(100%,column);
+                    padding: 10px;
                    }
                    
                    .content{

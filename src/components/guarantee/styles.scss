@@ -84,7 +84,7 @@
 
 
                     &-subtitle{
-                        @include subtitle(14px, start ,$color5);
+                        @include subtitle(22px, start ,$color1);
                         
                         //for tablet
                         @include for-tablet-only{

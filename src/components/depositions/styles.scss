@@ -1,10 +1,15 @@
 @import "../../abstract/functions", "../../abstract/responsive", "../../abstract/variables";
 
+.sectionDepositions{
+    position: relative;
+    @include backgroundImage("../../assets/banner5.png");
+    background-attachment: fixed;
+}
+
 .depositions{
 
     @include fullscreen(100vw, auto);
-    padding: 40px 0px;
-    @include backgroundImage("../../assets/banner5.png");
+    padding: 60px 0px;
     
     @include displayflex(justify-content,center);
     align-items: center;
@@ -24,6 +29,8 @@
     &__container{
         width: 80%;
         margin: auto;
+
+        margin: 60px 0px;
         
         @include displayflex(justify-content, center);
         flex-direction: column;
@@ -34,7 +41,7 @@
                 text-align: center;
 
                 .title{
-                    @include title(30px, center, $color2);
+                    @include title(33px, center, $color2);
                     margin: 20px 0;
 
                     //for tablet
@@ -51,6 +58,7 @@
                 .subtitle{
                     @include title(16px,center, $color6);
                     font-family: $font-special;
+                    margin-bottom: 25px;
                 }
 
             }
@@ -58,6 +66,7 @@
             &-images{
                 @include displayflex(justify-content, center);
                 margin-top: 15px;
+                margin-bottom: 25px;
 
                 //for phone
                 @include for-phone-only{
@@ -68,9 +77,21 @@
                 .images{
 
                     &__img{
-                        width: 260px;
-                        height: 260px;
-                        margin: 5px;
+                        width: 250px;
+                        height: 250px;
+                        margin: 16px;
+                        margin-bottom: 30px;
+
+                        cursor: pointer;
+
+                        &:hover{
+                            width: 280px;
+                            height: 280px;
+                            margin:1px;
+                       
+
+                            transition: all 0.6s ease;
+                            }
 
                         //for viewport - desktop
                         @include for-desktop-only{

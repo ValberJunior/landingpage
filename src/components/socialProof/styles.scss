@@ -4,7 +4,7 @@
 .socialProof{
     @include fullscreen(100vw, auto);
     
-    padding: 40px 0px;
+    padding: 80px 0px;
 
     @include displayflex(justify-content,center);
     align-items: center;
@@ -30,7 +30,7 @@
 
                     &-title{
                         @include title(33px,center,$color2);
-                        margin-bottom: 20px;
+                        margin-bottom: 30px;
 
                             //for tablet
                             @include for-tablet-only{
@@ -51,7 +51,7 @@
             
                     &-subtitle{
                         @include title(16px,center,$color5);
-                        margin-bottom: 20px;
+                        margin-bottom: 30px;
 
                             //for tablet
                             @include for-tablet-only{

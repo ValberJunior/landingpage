@@ -3,6 +3,8 @@ export { default as Button } from "./button/Button";
 export {default as About} from "./about/About";
 export {default as DividerTop} from "./divider/DividerTop";
 export {default as DividerBottom} from "./divider/DividerBottom";
+export {default as DividerTiltTop} from "./divider/DividerTiltTop";
+export {default as DividerTiltBottom} from "./divider/DividerTiltBottom";
 export { default as Depositions } from "./depositions/Depositions";
 export { default as Details} from "./details/Details";
 export { default as Subjects} from "./subjects/Subjects";
