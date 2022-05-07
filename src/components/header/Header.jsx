@@ -3,6 +3,8 @@ import { Button } from "../../components";
 import { DataHeader} from "../../data";
 import WavesDividerBottom from "../wavesDivider/WavesDividerBottom";
 
+
+
 const COLOR = "#FFFFFF";
 const DATA = DataHeader;
 
@@ -35,7 +37,10 @@ const Header = () => {
                  src="https://www.youtube.com/embed/6ggxcAidO28"
                 title="YouTube video player" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                >
+                  data-aos="fade-left"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                 >
                 </iframe>
         
 

@@ -21,7 +21,7 @@ const FreeClass = () => {
        <article className="freeClass__container">
             <div className="freeClass__container content">
 
-                <h2 className="content__title">{TITLE}</h2>
+                <h2 className="content__title" data-aos="fade-zoom-in" >{TITLE}</h2>
                 <h3 className="content__subtitle">{SUBTITLE}</h3>
                 <SmallWave width="122px" color={COLOR}/>
 

@@ -3,7 +3,7 @@
 .guarantee{
 
     @include fullscreen(100vw,auto);
-    background-color: $color4;
+    background: linear-gradient($color6, $color4, $color4, $color4);
     @include displayflex(justify-content,center);
 
     padding: 100px 0;

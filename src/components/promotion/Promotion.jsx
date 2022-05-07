@@ -13,7 +13,7 @@ const Promotion = () => {
 
        <article className="promotion__container">
            <div className="promotion__container-content content">
-           <h2 className="content__title">{DATA.title}</h2>
+           <h2 className="content__title" data-aos="zoom-in" >{DATA.title}</h2>
                 <ul className="content__list list">
                         {
                             DATA.options.map((item)=>{

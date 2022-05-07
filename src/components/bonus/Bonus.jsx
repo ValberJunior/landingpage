@@ -13,7 +13,7 @@ const Bonus = () => {
                 
                 <h2 className="bonus__content-title">{TITLE}</h2>
 
-                <div className="bonus__content-cards">
+                <div className="bonus__content-cards"  data-aos="zoom-in">
 
                     {
                       CARDS.map((card)=>{

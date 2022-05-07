@@ -8,9 +8,9 @@ function Details() {
     <section className="details">
 
         <article className="details__content">
-            <h2 className="details__content-title">{DATA.title} </h2>
+            <h2 className="details__content-title" data-aos="fade-zoom-in">{DATA.title} </h2>
 
-            <div className="details__content-cards .card">
+            <div className="details__content-cards .card" data-aos="zoom-in">
                     {
                             DATA.cards.map((item)=>{
                                 return( <div className="card__body" key={item.id}>

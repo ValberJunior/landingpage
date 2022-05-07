@@ -13,8 +13,8 @@ const Subjects = () => {
 
         <article className="subjects__content">
 
-                <h2 className="subjects__content-title">{DATA.title}</h2>
-                <h3 className="subjects__content-subtitle">{DATA.subtitle}</h3>
+                <h2 className="subjects__content-title" >{DATA.title}</h2>
+                <h3 className="subjects__content-subtitle" >{DATA.subtitle}</h3>
 
                 {/* Subjects */}
 
@@ -23,7 +23,7 @@ const Subjects = () => {
                     CARDS.map((card)=>{
                         return(
 
-                            <div key={card.id} className="subjects__content-cards card">
+                            <div key={card.id} className="subjects__content-cards card" data-aos="fade-zoom-in">
                                 <img src={card.icon} alt="" className="card__img"/>
                                 <h3 className="card__desc">{card.legend}</h3>
                             </div>

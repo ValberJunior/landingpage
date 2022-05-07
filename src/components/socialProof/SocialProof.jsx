@@ -17,7 +17,7 @@ const SocialProof = () => {
             <h2 className="socialProof__content-title">{TITLE}</h2>
             <h3 className="socialProof__content-subtitle">{SUBTITLE}</h3>
 
-            <div className="socialProof__content-cards">
+            <div className="socialProof__content-cards" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                     {
                         CARDS.map((card)=>{
                             return (

@@ -14,7 +14,9 @@ const Guarantee = () => {
 
               <div className="guarantee__container content">
 
-                    <div className="content__desc">
+                    <div className="content__desc"
+                     data-aos="fade-right">
+
                         <h3 className="content__desc-subtitle">{DATA.subtitle}</h3>
                         <h2 className="content__desc-title">{DATA.title}</h2>
                         <SmallWave width="80px" color={COLOR1}/>
@@ -22,7 +24,8 @@ const Guarantee = () => {
                         <p className="content__desc-text">{DATA.desc2}</p>
                     </div>
 
-                    <img src={DATA.img} alt={DATA.alt} className="content__img" />
+                    <img src={DATA.img} alt={DATA.alt} className="content__img"
+                     data-aos="fade-left"/>
 
               </div>
 
