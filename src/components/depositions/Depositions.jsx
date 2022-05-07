@@ -16,7 +16,7 @@ const Depositions = () => {
     
         <article className="depositions">
 
-              <div class="depositions__container">
+              <div className="depositions__container">
                     <div className="depositions__container-content">
                         
                         <h2 className="depositions__container-content title" data-aos="fade-zoom-in">{DATA.title}</h2>

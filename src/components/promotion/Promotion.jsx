@@ -18,7 +18,7 @@ const Promotion = () => {
                         {
                             DATA.options.map((item)=>{
                                 return(
-                                    <li key={item.key} className="list__item"><i className="fa-solid fa-check list__item-indicator"></i> {item.option}</li>
+                                    <li  key={item.id} className="list__item"><i className="fa-solid fa-check list__item-indicator"></i> {item.option}</li>
                                 )
                             })
                         }

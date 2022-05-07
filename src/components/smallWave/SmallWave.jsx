@@ -3,10 +3,10 @@
 const SmallWave = ({color,width}) => {
   return (
     <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-    width={width} height="42.000000pt" viewBox={`0 0 ${width}.000000 42.000000`}
+    width={width} height={`42.000000pt`} viewBox={`0 0 ${width}.000000 42.000000`}
     preserveAspectRatio="xMidYMid meet">
    
-            <g transform="translate(0.000000,42.000000) scale(0.100000,-0.100000)"
+            <g transform={`translate(0.000000,42.000000) scale(0.100000,-0.100000)`}
             fill={color} stroke="none">
             <path d="M30 231 c0 -12 4 -21 9 -21 4 0 22 -23 39 -50 51 -82 93 -81 148 5
             19 30 37 55 39 55 2 0 20 -25 40 -55 19 -31 42 -58 50 -61 33 -13 66 7 101 61
