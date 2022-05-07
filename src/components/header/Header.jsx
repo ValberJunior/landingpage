@@ -34,7 +34,8 @@ const Header = () => {
                 <iframe className="description__video"
                  src="https://www.youtube.com/embed/6ggxcAidO28"
                 title="YouTube video player" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                >
                 </iframe>
         
 

@@ -9,9 +9,12 @@
 
     color: $color6;
 
-    padding: 25px 75px;
+    width: 441px;
+    height: 66px;
 
-    @include fontSize(16px);
+    margin-bottom: 15px;
+
+    @include fontSize(15px);
     font-weight: 600;
 
     border-radius: 50px;
@@ -19,6 +22,44 @@
     cursor: pointer;
 
     margin-bottom: 20px;
+
+
+    //animation pulse
+
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+
+    &:hover, &:focus, &:active{
+        
+        -webkit-animation-name: ef-pulse-grow;
+        animation-name: ef-pulse-grow;
+        -webkit-animation-duration: 0.3s;
+        animation-duration: 0.3s;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+        animation-direction: alternate;        
+    }
+
+    @-webkit-keyframes ef-pulse-grow {
+        to {
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+        }
+      }
+      @keyframes ef-pulse-grow {
+        to {
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+        }
+      }
+
+      //end animation
 
     //for tablet
     @include for-tablet-only{
