@@ -1,7 +1,6 @@
 import "./styles.scss";
-import { DataFooter } from "../../data";
+import { Link } from "react-router-dom";
 
-const DATA = DataFooter;
 
 const Footer = () => {
   return (
@@ -10,8 +9,9 @@ const Footer = () => {
         <section className="footer__container content">
 
             <div className="content__links">
-                <a href={DATA.url1} className="content__links-link">Termos de Uso</a>
-                <a href={DATA.url2} className="content__links-link">Políticas de privacidade</a>
+
+                <Link className="content__links-link" to="/termos">Termos de Uso</Link>
+                <Link className="content__links-link" to="/privacidade">Políticas de privacidade</Link>
             </div>
 
             <span className="content__copyright">© Escola de Design de Unhas - Todos os Direitos Reservados - Por Valber Júnior</span>

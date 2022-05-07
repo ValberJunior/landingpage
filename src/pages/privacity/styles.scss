@@ -1,0 +1,46 @@
+@import "../../abstract/functions", "../../abstract/responsive", "../../abstract/variables";
+
+.privacity{
+    @include fullscreen(100vw,100vh);
+
+
+        &__desc{
+            @include wrapperCenter(60%, center);
+            flex-direction: column;
+
+            padding: 20px 0px;
+
+            @include for-tablet-only{
+                @include wrapperCenter(80%, center);
+            }
+
+            @include for-phone-only{
+                @include wrapperCenter(90%, center);
+            }
+
+            &-title{
+                @include title(38px, center, $color1);
+                margin-bottom: 25px;
+
+                    span{
+                        color: $color2;
+                    }
+
+                @include for-tablet-only{
+                    @include title(28px, center, $color1);
+                }
+
+                @include for-phone-only{
+                    @include title(22px, center, $color1);
+                }
+            }
+
+            &-text{
+                @include text(13px, left, $color5);
+
+                p{
+                    margin-top: 10px;
+                }
+            }
+        }
+}

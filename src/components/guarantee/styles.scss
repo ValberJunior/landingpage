@@ -21,6 +21,7 @@
         &__container{
 
             @include wrapperCenter(80%,row);
+            padding: 40px 0px;
 
             //for tablet
             @include for-tablet-only{
@@ -59,8 +60,8 @@
 
                 //for phone
                 @include for-phone-only{
-                    width: 282px;
-                    margin-bottom: 20px;
+                    width: 290px;
+                    margin-bottom: 50px;
                 }                     
 
                 }

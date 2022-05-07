@@ -1,4 +1,5 @@
 export { default as Header } from "./header/Header";
+export { default as HeaderDefault} from "./headerDefault/HeaderDefault";
 export { default as Button } from "./button/Button"; 
 export {default as About} from "./about/About";
 export {default as DividerTop} from "./divider/DividerTop";

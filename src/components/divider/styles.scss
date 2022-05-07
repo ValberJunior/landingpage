@@ -55,17 +55,17 @@
     line-height: 0;
     transform: rotate(180deg);
 
-    svg{
-      position: relative;
-      display: block;
-      width: calc(100% + 1.3px);
-      height: 64px;
-      transform: rotateY(180deg);
-    }
+      svg{
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 64px;
+        transform: rotateY(180deg);
+      }
 
-    &__shape-fill {
-      fill: $color6;
-  }
+      &__shape-fill {
+        fill: $color6;
+    }
 }
 
 

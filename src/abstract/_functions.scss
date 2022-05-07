@@ -53,13 +53,6 @@
     display: flex
 };
 
-//Divider Pages with Dashed Borders
-
-@mixin dashedBorder($size, $color){
-    border-top: $size dashed $color;
-    border-bottom: $size dashed $color;
-}
-
 //Background Image - Cover
 
 @mixin backgroundImage($url){
