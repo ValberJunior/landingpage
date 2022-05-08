@@ -84,20 +84,10 @@
 
                         cursor: pointer;
 
+                        &:hover{
 
-                        //for viewport - desktop
-                        @include for-desktop-only{
-                            width: 210px;
-                            height: auto;
-
-                            &:hover{
-                                width: 280px;
-                                height: 280px;
-                                margin:1px;
-                           
-    
-                                transition: all 0.6s ease;
-                                }
+                            border: 2px solid red;
+                            transition: all 0.4s ease;
                         }
 
                         //for tablet
