@@ -11,5 +11,5 @@
 docker run -it -p 3000:3000 docker-react npm start
 
 
-## Deploy ➡️ https://cursodesigndeunhas.netlify.app
+## Deploy ➡️ https://cursodesigndeunhas.netlify.app/
 
