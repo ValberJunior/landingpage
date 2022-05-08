@@ -3,7 +3,7 @@
 .promotion{
 
     @include fullscreen(100vw, auto);
-    @include backgroundImage("../../assets/banner4.png");
+    @include backgroundImage("https://images2.imgbox.com/b2/c6/PpSWaF9v_o.png");
     
       &__container{
                @include displayflex(justify-content, center);
