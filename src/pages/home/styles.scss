@@ -1,0 +1,41 @@
+@import "../../abstract/functions", "../../abstract/responsive", "../../abstract/variables";
+
+
+.top{
+    width: 70px;
+    height: 70px;
+
+    position:fixed;
+    left:90%;
+    top:80%;
+
+    font-size: 3rem;
+    cursor: pointer;
+    background: $color8;
+    color: $color1;
+    
+    border: none;
+    outline: none;
+    border-radius: 50%;
+
+    opacity: 0.5;
+
+    padding: 10px;
+
+    &:hover{
+        opacity: 1;
+        transition: all 0.3s ease;
+    }
+
+    @include for-tablet-only{
+        position:fixed;
+        left:80%;
+        top:80%;
+    }
+
+        @include for-phone-only{
+            position:fixed;
+            left:60%;
+            top:80%;
+        }
+}
