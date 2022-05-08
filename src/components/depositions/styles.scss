@@ -84,11 +84,6 @@
 
                         cursor: pointer;
 
-                        &:hover{
-
-                            border: 2px solid red;
-                            transition: all 0.4s ease;
-                        }
 
                         //for tablet
                         @include for-tablet-only{
