@@ -21,7 +21,7 @@ const Certificates = () => {
                         <h2 className="content__title">{DATA.title}</h2>
                         <p className="content__desc">{DATA.desc}</p>
                         <img src={DATA.seal} alt={DATA.altseal} className="content__seal"/>
-                        <SmallWave width="82px" color={COLOR}/>
+                        <SmallWave width={82} color={COLOR}/>
                         <img src={DATA.certificates} alt={DATA.altcertificates} className="content__images"/>
                 </div>
           </article>

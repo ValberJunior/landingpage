@@ -48,7 +48,7 @@ const Header = () => {
 
         </div>
 
-        <WavesDividerBottom width="100vw" height="120" color={COLOR} />
+        <WavesDividerBottom width={100} color={COLOR} />
         
     </header>
   )

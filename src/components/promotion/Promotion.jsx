@@ -9,7 +9,7 @@ const DATA = DataPromotion;
 const Promotion = () => {
   return (
     <section className="promotion">
-    <WavesDividerTop  width="100vw" height="150" color={COLOR}/>
+    <WavesDividerTop  width={100} color={COLOR}/>
 
        <article className="promotion__container">
            <div className="promotion__container-content content">

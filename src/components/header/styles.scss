@@ -3,7 +3,7 @@
 .header{
 
    @include fullscreen(100vw, auto);
-    @include backgroundImage("https://images2.imgbox.com/a8/82/I0H5StKi_o.png");
+    @include backgroundImage("../../assets/banner.png");
     padding: 90px 0px;
 
     position: relative;

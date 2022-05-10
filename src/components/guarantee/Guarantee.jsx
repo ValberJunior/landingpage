@@ -19,7 +19,7 @@ const Guarantee = () => {
 
                         <h3 className="content__desc-subtitle">{DATA.subtitle}</h3>
                         <h2 className="content__desc-title">{DATA.title}</h2>
-                        <SmallWave width="80px" color={COLOR1}/>
+                        <SmallWave width={80} color={COLOR1}/>
                         <p className="content__desc-text">{DATA.desc1}</p>
                         <p className="content__desc-text">{DATA.desc2}</p>
                     </div>

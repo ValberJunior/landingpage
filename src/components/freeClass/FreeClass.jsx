@@ -20,14 +20,14 @@ const FreeClass = () => {
 
                 <h2 className="content__title" data-aos="fade-zoom-in" >{TITLE}</h2>
                 <h3 className="content__subtitle">{SUBTITLE}</h3>
-                <SmallWave width="122px" color={COLOR}/>
+                <SmallWave width={122} color={COLOR}/>
 
                 <iframe
                 className="content__video"
                 src="https://www.youtube.com/embed/9z6dp8gv2NU" 
                 title="YouTube video player" 
-                allow="accelerometer; autoplay; clipboard-write; 
-                encrypted-media; gyroscope; picture-in-picture">
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                >
                 </iframe>
 
                 <Button>{TEXTBUTTON}</Button>
