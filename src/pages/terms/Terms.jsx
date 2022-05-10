@@ -1,7 +1,17 @@
-import { Footer, HeaderDefault } from "../../components"
+import { useEffect } from "react";
+import { ButtonHome, Footer, HeaderDefault } from "../../components"
 import "./styles.scss"
 
 const Terms = () => {
+
+    useEffect(()=>{
+        window.scrollTo({
+          top: 0, 
+          behavior: 'smooth'
+        });
+      },[])
+
+
   return (
     <section className="terms">
         <HeaderDefault/>
@@ -114,6 +124,7 @@ const Terms = () => {
             </div>
         </article>
 
+        <ButtonHome/>
         <Footer/>
     </section>
   )

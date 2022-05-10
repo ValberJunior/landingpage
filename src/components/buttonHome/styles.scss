@@ -1,7 +1,6 @@
 @import "../../abstract/functions", "../../abstract/responsive", "../../abstract/variables";
 
-
-.top{
+.home{
     width: 60px;
     height: 60px;
 
@@ -9,7 +8,7 @@
     left:90%;
     top:80%;
 
-    font-size: 3rem;
+    font-size: 2rem;
     cursor: pointer;
     background: $color8;
     color: $color1;
@@ -21,8 +20,6 @@
     opacity: 0.5;
 
     padding: 5px;
-
-    z-index: 99999;
 
     &:hover{
         opacity: 1;

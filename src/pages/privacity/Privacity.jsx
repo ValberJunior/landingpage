@@ -1,7 +1,17 @@
-import { Footer, HeaderDefault } from "../../components";
+import { useEffect } from "react";
+import { ButtonHome, Footer, HeaderDefault } from "../../components";
 import "./styles.scss";
 
 const Privacity = () => {
+
+  useEffect(()=>{
+    window.scrollTo({
+      top: 0, 
+      behavior: 'smooth'
+    });
+  },[])
+
+
   return (
     <section className="privacity">
         <HeaderDefault/>
@@ -105,7 +115,7 @@ const Privacity = () => {
                     </p>
             </div>
         </article>
-
+        <ButtonHome/>
         <Footer/>
     </section>
   )

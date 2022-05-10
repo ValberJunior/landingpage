@@ -11,8 +11,8 @@ const scrollToTop = () =>{
   window.scrollTo({
     top: 0, 
     behavior: 'smooth'
-
   });
+  
 };
 
 
@@ -28,7 +28,8 @@ const Home = () => {
     const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
     if (scrolled > 800){
-      setVisible(true)
+      setVisible(true);
+
     } 
     else if (scrolled <= 800){
       setVisible(false)
@@ -52,8 +53,11 @@ const Home = () => {
     <Garantee/>
     <Promotion/>
     <Footer/>
-    <button onClick={scrollToTop} style={{display: visible ? 'inline' : 'none'}} className="top">
-    <i className="fa-solid fa-arrow-up"></i>
+    <button
+      onClick={(e)=>{scrollToTop()}}
+      style={{display: visible ? 'inline' : 'none'}}
+      className="top">
+        <i className="fa-solid fa-chevron-up"></i>
     </button>
     </>
   )
