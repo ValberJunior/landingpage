@@ -4,7 +4,8 @@
 .freeClass{
     width: 100vw;
     height: auto;
-    @include backgroundImage("https://images2.imgbox.com/1a/82/MurtcVYs_o.png");
+    @include backgroundImage("../../assets/banner5.png");
+    background-attachment: fixed;
 
     &__container{
   

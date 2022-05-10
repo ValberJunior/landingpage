@@ -3,7 +3,7 @@
 .subjects{
 
     @include fullscreen(100vw, auto);
-    @include backgroundImage("https://images2.imgbox.com/9e/e3/3aOcljT3_o.png");
+    @include backgroundImage("../../assets/banner2.png");
     background-attachment: fixed;
 
     position: relative;
