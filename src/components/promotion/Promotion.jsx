@@ -26,7 +26,11 @@ const Promotion = () => {
            <span className="content__oldprice">{DATA.oldprice}</span>
            <span className="content__price">{DATA.price}</span>
            <span className="content__price2">{DATA.price2}</span>
-           <Button>{DATA.button}</Button>
+
+           <a href={DATA.url}>
+              <Button>{DATA.button}</Button>
+            </a>
+            
            <img src={DATA.logos} alt={DATA.alt} className="content__img"/>
            </div>
        </article>

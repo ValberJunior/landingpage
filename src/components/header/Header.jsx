@@ -25,7 +25,7 @@ const Header = () => {
                  <h2 className="description__text-title">{DATA.title}</h2>
                  <p className="description__text-desc">{DATA.desc}</p>
 
-                <a href={DATA.link}>
+                <a href={DATA.url}>
                     <Button>
                         {DATA.button}
                       </Button>

@@ -7,7 +7,7 @@ export const DataHeader = {
         desc: `Muitas alunas estão colocando em prática as TÉCNICAS ATUAIS DE ALONGAMENTO 
         que estão aprendendo neste EXATO MOMENTO na ESCOLA DESIGNER DE UNHAS. Só falta você.`,
         button: "SIM, QUERO COMEÇAR AGORA!",
-        link: `https://go.hotmart.com/T69286431V?ap=1912` //checkout 99
+        url: `https://go.hotmart.com/T69286431V?ap=1912` //checkout 99
     }
 
 
@@ -262,7 +262,8 @@ export const DataFreeClass =
     {
         title: "Assista a Uma Aula Grátis!",
         subtitle: "Confira uma aula gratuita do nosso curso!",
-        button: "SIM, QUERO COMEÇAR AGORA!"
+        button: "SIM, QUERO COMEÇAR AGORA!",
+        url: "https://go.hotmart.com/T69286431V?ap=1912",
     }
 
 //
@@ -364,7 +365,7 @@ export const DataPromotion =
         price:"8x de R$ 11,14",
         price2:"Ou apenas R$ 79,90 á vista",
         button:"SIM, QUERO GARANTIR MINHA VAGA!",
-        url:"#",
+        url:"https://go.hotmart.com/T69286431V?ap=1912",
         logos:"https://unhasprofissionais.com/wp-content/uploads/2021/10/branquinhu.png",
         alt:"Métodos de Pagamentos"
     }

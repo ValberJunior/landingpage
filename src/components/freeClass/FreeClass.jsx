@@ -11,6 +11,8 @@ const FreeClass = () => {
  const TITLE = DataFreeClass.title;
  const SUBTITLE = DataFreeClass.subtitle;
  const TEXTBUTTON = DataFreeClass.button;
+ const URL = DataFreeClass.url;
+
     
   return (
     <section className="freeClass">
@@ -30,7 +32,9 @@ const FreeClass = () => {
                 >
                 </iframe>
 
-                <Button>{TEXTBUTTON}</Button>
+                <a href={URL}>
+                  <Button>{TEXTBUTTON}</Button>
+                </a>
 
             </div>
        </article>
