@@ -22,7 +22,7 @@
                    //for phone
                    @include for-phone-only{
                     @include wrapperCenter(100%,column);
-                    padding: 10px;
+                    padding: 20px;
                    }
                    
                    .content{
