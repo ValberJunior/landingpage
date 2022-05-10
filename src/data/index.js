@@ -362,8 +362,8 @@ export const DataPromotion =
                   id:"4"}
                 ],
         oldprice:`de R$ 297,00 Por Apenas`,
-        price:"8x de R$ 11,14",
-        price2:"Ou apenas R$ 79,90 á vista",
+        price:"11x de R$ 10,49",
+        price2:"Ou apenas R$ 99,90 á vista",
         button:"SIM, QUERO GARANTIR MINHA VAGA!",
         url:"https://go.hotmart.com/T69286431V?ap=1912",
         logos:"https://unhasprofissionais.com/wp-content/uploads/2021/10/branquinhu.png",
