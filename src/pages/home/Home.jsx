@@ -1,5 +1,5 @@
-import { Header, About,Depositions, Details, Subjects, Bonus, FreeClass, SocialProof, Certificates, LifeTimeAccess, Garantee, Promotion, Footer} from "../../components";
-import "./styles.scss"
+import { Header, About,Depositions, Details, Subjects, Bonus, FreeClass, SocialProof, Certificates, LifeTimeAccess, Garantee, Promotion, Footer, Modal} from "../../components";
+import "./styles.scss";
 
 //animation
 import Aos from "aos";
@@ -18,17 +18,21 @@ const scrollToTop = () =>{
 
 const Home = () => {
 
+    const [isLoading, setIsLoading] = useState(true);
     const [visible, setVisible] = useState(false)
 
         //animation
         useEffect(()=>{
           Aos.init({duration: 2000});
-        },[])
+          setTimeout(()=>{
+            setIsLoading(false)
+          },2500)
+        },[]);
     
     const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
     if (scrolled > 800){
-      setVisible(true);
+      setVisible(!isLoading);
 
     } 
     else if (scrolled <= 800){
@@ -38,27 +42,37 @@ const Home = () => {
 
   window.addEventListener('scroll', toggleVisible);
 
+
+
   return (
     <>
-    <Header/>
-    <About/>
-    <Depositions/>
-    <Details/>
-    <Subjects/>
-    <Bonus/>
-    <FreeClass/>
-    <SocialProof/>
-    <Certificates/>
-    <LifeTimeAccess/>
-    <Garantee/>
-    <Promotion/>
-    <Footer/>
-    <button
-      onClick={(e)=>{scrollToTop()}}
-      style={{display: visible ? 'inline' : 'none'}}
-      className="top">
-        <i className="fa-solid fa-chevron-up"></i>
-    </button>
+          
+          {isLoading?
+           (<Modal style={{display: isLoading ? 'inline' : 'none'}} />)
+           :
+                (
+                  <>  
+                    <Header/>
+                    <About/>
+                    <Depositions/>
+                    <Details/>
+                    <Subjects/>
+                    <Bonus/>
+                    <FreeClass/>
+                    <SocialProof/>
+                    <Certificates/>
+                    <LifeTimeAccess/>
+                    <Garantee/>
+                    <Promotion/>
+                    <Footer/>
+                    <button
+                      onClick={(e)=>{scrollToTop()}}
+                      style={{display: visible ? 'inline' : 'none'}}
+                      className="top">
+                        <i className="fa-solid fa-chevron-up"></i>
+                    </button>
+                  </>)
+          }
     </>
   )
 }

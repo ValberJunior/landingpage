@@ -1,0 +1,21 @@
+@import "../../abstract/functions", "../../abstract/responsive", "../../abstract/variables";
+
+.loading{
+
+    @include fullscreen(100vw,100vh);
+    background-color: $color6;
+
+    @include displayflex(justify-content,center);
+    align-items: center;
+    flex-direction: column;
+
+    &__img{
+
+        width: 10%;
+
+    }
+    &__animation{
+        width: 30%;
+
+    }
+}
