@@ -10,11 +10,11 @@ const DATA = DataHeader;
 const HeaderDefault = () => {
 
  return (
-    <header className="header">
+    <header className="headerDefault">
         
-        <div className="header__wrapper">
+        <div className="headerDefault__wrapper">
 
-            <div className="header__wrapper-logo .logo">
+            <div className="headerDefault__wrapper-logo .logo">
                 <Link to="/">
                     <img src={DATA.logo} alt={DATA.alt} arial-label="Logo do Curso" className="logo__img"/>
                 </Link>

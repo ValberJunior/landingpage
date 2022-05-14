@@ -1,6 +1,6 @@
 @import "../../abstract/functions", "../../abstract/responsive", "../../abstract/variables";
 
-.header{
+.headerDefault{
 
    @include fullscreen(100vw, auto);
     @include backgroundImage("https://images2.imgbox.com/a8/82/I0H5StKi_o.png");

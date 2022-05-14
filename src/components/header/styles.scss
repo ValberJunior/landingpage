@@ -3,7 +3,7 @@
 .header{
 
    @include fullscreen(100vw, auto);
-   background:url("../../assets/banner4.png"); 
+   @include backgroundImage("../../assets/banner.png");
     background-attachment:unset;
     padding: 90px 0px;
 
