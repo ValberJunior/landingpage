@@ -38,7 +38,7 @@
             }
 
             &__title{
-                @include title(35px, center, $color2);
+                @include title(38px, center, $color2);
                 margin-top: 20px;
 
                 //phone
@@ -51,7 +51,7 @@
             }
 
             &__subtitle{
-                @include subtitle(16px, center, $color6);
+                @include subtitle(20px, center, $color6);
                 margin-top: 20px;
             }
 

@@ -82,10 +82,10 @@
                     font-family: $font-special;
                     color: $color5;
                     font-weight: 400;
-                    @include fontSize(14px);
+                    @include fontSize(16px);
                 }
                 &__title{
-                    @include title(30px, start, $color1);
+                    @include title(34px, start, $color1);
                     margin-top: 15px;
 
                     //for phone
@@ -96,7 +96,7 @@
                 }
 
                 &__desc{
-                    @include text(16px, start, $color-text);
+                    @include text(18px, start, $color-text);
                     margin-top: 15px;
                 }
 

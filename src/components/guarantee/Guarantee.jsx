@@ -25,7 +25,8 @@ const Guarantee = () => {
                     </div>
 
                     <img src={DATA.img} alt={DATA.alt} className="content__img"
-                     data-aos="fade-left"/>
+                     data-aos="fade-left"
+                     loading="lazy"/>
 
               </div>
 

@@ -27,7 +27,7 @@ const Subjects = () => {
                         return(
 
                             <div key={card.id} className="subjects__content-cards card" data-aos="fade-zoom-in">
-                                <img src={card.icon} alt="" className="card__img"/>
+                                <img src={card.icon} alt="" className="card__img" loading="lazy"/>
                                 <h3 className="card__desc">{card.legend}</h3>
                             </div>
 

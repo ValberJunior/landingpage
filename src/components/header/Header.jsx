@@ -16,7 +16,7 @@ const Header = () => {
         <div className="header__wrapper">
 
             <div className="header__wrapper-logo .logo">
-                <img src={DATA.logo} alt={DATA.alt} arial-label="Logo do Curso" className="logo__img"/>
+                <img src={DATA.logo} alt={DATA.alt} arial-label="Logo do Curso" className="logo__img" loading="lazy"/>
             </div>
 
             <div className="header__wrapper-description description">
@@ -40,6 +40,7 @@ const Header = () => {
                   data-aos="fade-left"
                   data-aos-offset="300"
                   data-aos-easing="ease-in-sine"
+                  loading="lazy"
                  >
                 </iframe>
         

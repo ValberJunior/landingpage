@@ -22,7 +22,7 @@ const SocialProof = () => {
                         CARDS.map((card)=>{
                             return (
                                                 <div className="card__body-cards card" key={card.id} data-aos="fade-up" >
-                                                    <img src={card.image} alt={card.alt} className="card__img"/>
+                                                    <img src={card.image} alt={card.alt} className="card__img" loading="lazy"/>
                                                 </div>
                                     )
                         })

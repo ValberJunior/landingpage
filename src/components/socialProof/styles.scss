@@ -29,7 +29,7 @@
 
 
                     &-title{
-                        @include title(33px,center,$color2);
+                        @include title(38px,center,$color2);
                         margin-bottom: 30px;
 
                             //for tablet
@@ -50,7 +50,7 @@
                     }
             
                     &-subtitle{
-                        @include title(16px,center,$color5);
+                        @include title(17px,center,$color5);
                         margin-bottom: 30px;
 
                             //for tablet

@@ -31,7 +31,7 @@ const Promotion = () => {
               <Button>{DATA.button}</Button>
             </a>
             
-           <img src={DATA.logos} alt={DATA.alt} className="content__img"/>
+           <img src={DATA.logos} alt={DATA.alt} className="content__img" loading="lazy"/>
            </div>
        </article>
 

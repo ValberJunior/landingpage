@@ -19,7 +19,7 @@ const Bonus = () => {
                       CARDS.map((card)=>{
                         return(
                                 <div className="bonus__content-cards card" key={card.id}>
-                                    <img src={card.icon} alt="icone de Bonus" className="card__img"/>
+                                    <img src={card.icon} alt="icone de Bonus" className="card__img" loading="lazy"/>
                                     <h3 className="card__title">{card.title}</h3>
                                     <h4 className="card__subtitle">{card.subtitle}</h4>
                                     <p className="card__desc">{card.desc}</p>

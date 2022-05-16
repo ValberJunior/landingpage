@@ -50,7 +50,7 @@
         }
     
         &-subtitle{
-            @include subtitle(16px, center, $color6);  
+            @include subtitle(18px, center, $color6);  
            margin-bottom: 30px;
 
             //for tablet

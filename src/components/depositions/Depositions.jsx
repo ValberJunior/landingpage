@@ -26,7 +26,7 @@ const Depositions = () => {
                             {
                               IMAGES.map((image)=>{
                                 return(
-                                  <img src={image.img} alt={image.alt} className="images__img" key={image.id} data-aos="zoom-in"/>
+                                  <img src={image.img} alt={image.alt} className="images__img" key={image.id} data-aos="zoom-in" loading="lazy"/>
                                 )
                               })
                             }

@@ -41,7 +41,7 @@
                 text-align: center;
 
                 .title{
-                    @include title(33px, center, $color2);
+                    @include title(38px, center, $color2);
                     margin: 20px 0;
 
                     //for tablet
@@ -56,7 +56,7 @@
 
                 }
                 .subtitle{
-                    @include title(16px,center, $color6);
+                    @include title(18px,center, $color6);
                     font-family: $font-special;
                     margin-bottom: 25px;
                 }

@@ -27,7 +27,7 @@
                     }
         
                     &__title{
-                        @include title(35px,center,$color1);
+                        @include title(38px,center,$color1);
                         margin-bottom: 20px;
 
                         //for phone
@@ -43,7 +43,7 @@
                     &__desc{
         
                         width:70%;
-                        @include text(16px, center, $color2);
+                        @include text(17px, center, $color2);
         
                         margin-bottom: 15px;
 

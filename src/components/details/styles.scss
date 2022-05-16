@@ -26,8 +26,8 @@
         }
 
             &-title{
-                @include title(33px, center, $color2);
-                width: 50%;
+                @include title(38px, center, $color2);
+                width: 60%;
                 margin-bottom: 15px;
 
                 &::first-line{

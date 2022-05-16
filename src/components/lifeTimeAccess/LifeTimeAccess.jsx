@@ -13,7 +13,7 @@ const DATA = DataLifetimeAccess;
 
         <div className="lifeTimeAccess__container content">
 
-            <img src={DATA.img} alt={DATA.alt} className="content__img" />
+            <img src={DATA.img} alt={DATA.alt} className="content__img" loading="lazy"/>
 
             <div className="content__desc">
                 <h3 className="content__desc-subtitle">{DATA.subtitle}</h3>

@@ -68,7 +68,7 @@
                     }
 
                     &-subtitle{
-                        @include subtitle(14px, start ,$color5);
+                        @include subtitle(18px, start ,$color5);
 
                         //for tablet
                         @include for-tablet-only{
@@ -83,7 +83,7 @@
                     }
 
                     &-title{
-                        @include title(30px,start,$color2);
+                        @include title(35px,start,$color2);
                         margin-top: 15px;
 
                         //for tablet
@@ -99,7 +99,7 @@
                     }
 
                     &-text{
-                        @include text(17px, start, $color2);
+                        @include text(18px, start, $color2);
                         margin-top: 15px;
 
                         //for tablet
